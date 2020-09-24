@@ -1,0 +1,16 @@
+2020-09-24T18:51:42.619Z [33m[jffe ][39m [34m[INFO ][39m [                ] [                              ] [main                ] - frontend (jffe) service initialization started. Version: 1.7.4 Revision: 0.0.0 PID: 3955 Home: /opt/jfrog/artifactory
+2020-09-24T18:51:42.621Z [33m[jffe ][39m [34m[INFO ][39m [                ] [                              ] [main                ] - attempting pinging artifactory for 180 retires and 1.0s interval for total of 3 minutes
+2020-09-24T18:51:51.705Z [33m[jffe ][39m [34m[INFO ][39m [                ] [                              ] [main                ] - pinging artifactory, attempt number 10
+2020-09-24T18:51:51.709Z [33m[jffe ][39m [34m[INFO ][39m [                ] [                              ] [main                ] - pinging artifactory attempt number 10 failed with code : ECONNREFUSED
+2020-09-24T18:52:01.785Z [33m[jffe ][39m [34m[INFO ][39m [                ] [                              ] [main                ] - pinging artifactory, attempt number 20
+2020-09-24T18:52:01.786Z [33m[jffe ][39m [34m[INFO ][39m [                ] [                              ] [main                ] - pinging artifactory attempt number 20 failed with code : ECONNREFUSED
+2020-09-24T18:52:11.933Z [33m[jffe ][39m [34m[INFO ][39m [                ] [                              ] [main                ] - pinging artifactory, attempt number 30
+2020-09-24T18:52:11.963Z [33m[jffe ][39m [34m[INFO ][39m [                ] [                              ] [main                ] - pinging artifactory attempt number 30 failed with code : ECONNREFUSED
+2020-09-24T18:52:22.388Z [33m[jffe ][39m [34m[INFO ][39m [                ] [                              ] [main                ] - pinging artifactory, attempt number 40
+2020-09-24T18:52:22.467Z [33m[jffe ][39m [34m[INFO ][39m [                ] [                              ] [main                ] - pinging artifactory attempt number 40 failed with code : undefined
+2020-09-24T18:52:28.787Z [33m[jffe ][39m [34m[INFO ][39m [                ] [                              ] [main                ] - artifactory was pinged successfully
+2020-09-24T18:52:28.791Z [33m[jffe ][39m [34m[INFO ][39m [                ] [                              ] [main                ] - setting service id - jffe@000
+2020-09-24T18:52:29.004Z [33m[jffe ][39m [34m[INFO ][39m [                ] [                              ] [main                ] - Cluster join: Successfully joined the cluster
+2020-09-24T18:52:29.318Z [33m[jffe ][39m [34m[INFO ][39m [                ] [                              ] [main                ] - UI service successfully registered on router, serviceId: jffe@000
+2020-09-24T18:52:29.701Z [33m[jffe ][39m [34m[INFO ][39m [                ] [                              ] [main                ] - Recurring tasks started
+2020-09-24T18:52:30.675Z [33m[jffe ][39m [34m[INFO ][39m [                ] [                              ] [main                ] - frontend (jffe) service initialization completed in 48.06 seconds. Listening on port: port 8070

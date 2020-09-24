@@ -1,0 +1,22 @@
+# This template is used to create routing rules for Traefik
+# References: https://docs.traefik.io/configuration/backends/file/
+#             https://docs.traefik.io/basics/#frontends
+#             https://docs.traefik.io/basics/#backends
+
+[frontends]
+
+
+  [frontends.jfmd_01ehmtb8dhfgkam1byzedh308k-2f2044a92002-0-rule0]
+    entryPoints = ["internal","external"]
+    backend = "jfmd_01ehmtb8dhfgkam1byzedh308k-2f2044a92002-0"
+
+    [frontends.jfmd_01ehmtb8dhfgkam1byzedh308k-2f2044a92002-0-rule0.routes.match]
+      rule = "PathPrefixStrip: /metadata/"
+
+
+[backends]
+
+  [backends.jfmd_01ehmtb8dhfgkam1byzedh308k-2f2044a92002-0]
+    [backends.jfmd_01ehmtb8dhfgkam1byzedh308k-2f2044a92002-0.servers.server1]
+      url = "http://localhost:8086"
+

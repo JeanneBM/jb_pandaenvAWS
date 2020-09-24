@@ -1,0 +1,36 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.5">
+  <node class="cps.n.StepEndNode" plugin="workflow-cps@2.82">
+    <parentIds>
+      <string>110</string>
+    </parentIds>
+    <id>111</id>
+    <startId>3</startId>
+  </node>
+  <actions>
+    <wf.a.TimingAction plugin="workflow-api@2.40">
+      <startTime>1600902405477</startTime>
+    </wf.a.TimingAction>
+    <wf.a.ErrorAction plugin="workflow-api@2.40">
+      <error class="hudson.AbortException">
+        <detailMessage>not able to provide the file [ManagedFile: id=9d1ed313-ea70-4fa9-9934-7108c53eca75, targetLocation=null, variable=MAVEN_SETTINGS], can&apos;t be resolved by any provider - maybe it got deleted by an administrator?</detailMessage>
+        <stackTrace>
+          <trace>org.jenkinsci.lib.configprovider.model.ConfigFileManager.provisionConfigFile(ConfigFileManager.java:83)</trace>
+          <trace>org.jenkinsci.plugins.configfiles.buildwrapper.ManagedFileUtil.provisionConfigFiles(ManagedFileUtil.java:82)</trace>
+          <trace>org.jenkinsci.plugins.configfiles.buildwrapper.ConfigFileBuildWrapper.setUp(ConfigFileBuildWrapper.java:61)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.CoreWrapperStep$Execution2.doStart(CoreWrapperStep.java:97)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.GeneralNonBlockingStepExecution.lambda$run$0(GeneralNonBlockingStepExecution.java:77)</trace>
+          <trace>java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)</trace>
+          <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)</trace>
+          <trace>java.base/java.lang.Thread.run(Thread.java:834)</trace>
+        </stackTrace>
+        <suppressedExceptions class="empty-list"/>
+      </error>
+    </wf.a.ErrorAction>
+    <wf.a.ErrorAction plugin="workflow-api@2.40">
+      <error class="hudson.AbortException" reference="../../wf.a.ErrorAction/error"/>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>

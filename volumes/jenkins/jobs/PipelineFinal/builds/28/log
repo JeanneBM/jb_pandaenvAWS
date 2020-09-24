@@ -1,0 +1,101 @@
+Started by user [8mha:////4KAZa2T8wm7stt23rJ1FHk3fd3Aj1c/9xBMUpF//fwRJAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZu/dLi1CL9gsS8lEQA9JRhvsAAAAA=[0mpanda@panda.pl
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4O6OOdB7RT8Hw/daqC1d7TEYhS8V3xu+CUfubrwL7O6mAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4FzA1ZFp97URRZw76i2oXdkZEvmCMrVJeNeL3TT5CV9QAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4PoVkcEz2h9l6/qIPmn3FQ/qbM9euEKPkAqQ6sgaIY+/AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgYB/eT83ILSktQi/eCcxLJUfQCng2qgxQAAAA==[0mSlave in /home/workspace/PipelineFinal
+[8mha:////4Mldl8TkQs3uc03IDXk6vLSR2j62ir+PwBdCAEynYt9AAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4Dvbia5JhKki8tQBedaWZEzOvzSzB5NKUDuVcxcngfYKAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaGWsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gdpL1fxvAAAAA==[0m[Pipeline] readMavenPom
+[8mha:////4Cs62xSh1J87QaXFLZtY47Xw6VJ59UbA1RSlhdckm8CfAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGBtjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j8OXFZ7vAAAAA==[0m[Pipeline] }
+[8mha:////4KRDwSH3B+eX/oqopKU8+HH2i/DhjUlKkB3rLXC+eIAcAAAAox+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWFgYK1tC4wmQRYQl/7PAult5Iq/mHSRuYuUkk8yb5r3esM4JTpQs9wZ7h1k7HsNo6+ITpf4WaOKerlwTZgqGSzNJ6sx5QUnFwBLWwErAxqAOlB3aAlvh1UO1QaFtLyXV7yigcd0AT2CimotK5Qtzgt197DLhz/NXAHOMBdihdv8BHeBS2LwAAAA=[0m[Pipeline] // node
+[8mha:////4FgMWDIBHgwV90ByNejP/voCKHH07yWFBdLi7Zms8H3VAAAAph+LCAAAAAAAAP9tjUEKwjAURH8qXbh16SFScCWIK7chG08QkxjThv/bJLVdeSKv5h2MFlw5MDAzMLznC+oU4UjR8dZi5zFpz/swupL4RLG7Bpp4SxeuCRMFy6WdJBl7WqqkbGERq2AlYG1RB0oeXYaNaNVdNUGha845lu0goPJmgAcwUchZxfwtc4TtbTSJ8Mf5C4C5z8B2xfvPr34DrZTeycAAAAA=[0m[Pipeline] stage
+[8mha:////4KHdMZZpoHSRzrIqpjmIQhSOMDSwbE3xd5xNc/eMGAJDAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] { (Declarative: Post Actions)
+[8mha:////4JLcWLMxC+QtrMF8mJdgkLvx5lnIko3hzSTGAXbcc/9FAAAAoh+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKBEiEqWisNLzCJMU6su2BfSCpexNf4AxGRqNhqZ5p5vbFMEUeOTjWWWk+p8qoLvZueGji218CDaviiKqbEwarSDiXX9jRjyWIxL8ux0FhZqgInT06w1o15mCIYcsVZ4uQOGrmv73gi01NZTJQvjBGbW18npl/nbwBjJ8j2gny37T6VOYoyvQAAAA==[0m[Pipeline] sh
+Error when executing always post condition:
+org.jenkinsci.plugins.workflow.steps.MissingContextVariableException: Required context class hudson.FilePath is missing
+Perhaps you forgot to surround the code with a step that provides this, such as: node
+	at org.jenkinsci.plugins.workflow.steps.StepDescriptor.checkContextAvailability(StepDescriptor.java:266)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeStep(DSL.java:263)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:179)
+	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:122)
+	at jdk.internal.reflect.GeneratedMethodAccessor599.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:163)
+	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:157)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:161)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:165)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:135)
+	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)
+	at WorkflowScript.run(WorkflowScript:66)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.delegateAndExecute(ModelInterpreter.groovy:137)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.runPostConditions(ModelInterpreter.groovy:756)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.catchRequiredContextForNode(ModelInterpreter.groovy:395)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.catchRequiredContextForNode(ModelInterpreter.groovy:393)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.runPostConditions(ModelInterpreter.groovy:755)
+	at com.cloudbees.groovy.cps.CpsDefaultGroovyMethods.each(CpsDefaultGroovyMethods:2030)
+	at com.cloudbees.groovy.cps.CpsDefaultGroovyMethods.each(CpsDefaultGroovyMethods:2015)
+	at com.cloudbees.groovy.cps.CpsDefaultGroovyMethods.each(CpsDefaultGroovyMethods:2056)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.runPostConditions(ModelInterpreter.groovy:745)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.runPostConditions(ModelInterpreter.groovy)
+	at org.jenkinsci.plugins.pipeline.modeldefinition.ModelInterpreter.executePostBuild(ModelInterpreter.groovy:723)
+	at ___cps.transform___(Native Method)
+	at com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:86)
+	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:113)
+	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:83)
+	at jdk.internal.reflect.GeneratedMethodAccessor221.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)
+	at com.cloudbees.groovy.cps.impl.ConstantBlock.eval(ConstantBlock.java:21)
+	at com.cloudbees.groovy.cps.Next.step(Next.java:83)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:174)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:163)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:129)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:268)
+	at com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:163)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$001(SandboxContinuable.java:18)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:51)
+	at org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:185)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:400)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.access$400(CpsThreadGroup.java:96)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:312)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:276)
+	at org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$2.call(CpsVmExecutorService.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:136)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+[8mha:////4Itn52JcTv4aTuJTRdhPpHsw9Na3ycRGl1VU8B7RIp19AAAAoh+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6KE0Rgn14bFL6hQa6F5D9uHMPlF/pr/IJHEyTvdc5bzemOdIo4cnWotdZ5S7VUfBjc/NXLsroFH1fJF1UyJg1WVHStu7GnBisViWZZjpbGxVAdOnpxgq1vzMEUw5IqzxNkdNHLf3PFEpueymChfmCJ2t6FJTL/O3wCmvhfkZSnI9h+IfpSRvQAAAA==[0m[Pipeline] }
+[8mha:////4Kak1NIMOTgOMzsurK54WpEvDoDizatGa1w3zH7NLojCAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRVEiIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsPzjQzob0AAAA=[0m[Pipeline] // stage
+[8mha:////4E6HJ4ynh5n6T0mqFwuKA1Hxch9DeN1xl2e1nk/uD0ZNAAAAoh+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRUCIqWisNLzCJMU6su2BfSCpexNf4AxGRqNhqZ5p5vbFMEUeOTjWWWk+p8qoLvZueGji218CDaviiKqbEwarSDiXX9jRjyWIxL8ux0FhZqgInT06w1o15mCIYcsVZ4uQOGrmv73gi01NZTJQvjBGbW18npl/nbwBj1wny7V6Q7T5g9IZ8vQAAAA==[0m[Pipeline] End of Pipeline
+org.codehaus.plexus.util.xml.pull.XmlPullParserException: only whitespace content allowed before start tag and not p (position: START_DOCUMENT seen p... @1:1) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseProlog(MXParser.java:1862)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1698)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1317)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3856)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:609)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:638)
+	at org.jenkinsci.plugins.pipeline.utility.steps.maven.ReadMavenPomStep$Execution.run(ReadMavenPomStep.java:151)
+	at org.jenkinsci.plugins.pipeline.utility.steps.maven.ReadMavenPomStep$Execution.run(ReadMavenPomStep.java:124)
+	at org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Finished: FAILURE

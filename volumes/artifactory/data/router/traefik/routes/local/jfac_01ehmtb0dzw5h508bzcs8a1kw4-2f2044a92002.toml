@@ -1,0 +1,34 @@
+# This template is used to create routing rules for Traefik
+# References: https://docs.traefik.io/configuration/backends/file/
+#             https://docs.traefik.io/basics/#frontends
+#             https://docs.traefik.io/basics/#backends
+
+[frontends]
+
+
+  [frontends.jfac_01ehmtb0dzw5h508bzcs8a1kw4-2f2044a92002-0-rule0]
+    entryPoints = ["internal","external"]
+    backend = "jfac_01ehmtb0dzw5h508bzcs8a1kw4-2f2044a92002-0"
+
+    [frontends.jfac_01ehmtb0dzw5h508bzcs8a1kw4-2f2044a92002-0-rule0.routes.match]
+      rule = "PathPrefix: /com.jfrog.access."
+
+
+  [frontends.jfac_01ehmtb0dzw5h508bzcs8a1kw4-2f2044a92002-1-rule0]
+    entryPoints = ["internal","external"]
+    backend = "jfac_01ehmtb0dzw5h508bzcs8a1kw4-2f2044a92002-1"
+
+    [frontends.jfac_01ehmtb0dzw5h508bzcs8a1kw4-2f2044a92002-1-rule0.routes.match]
+      rule = "PathPrefix: /access/"
+
+
+[backends]
+
+  [backends.jfac_01ehmtb0dzw5h508bzcs8a1kw4-2f2044a92002-0]
+    [backends.jfac_01ehmtb0dzw5h508bzcs8a1kw4-2f2044a92002-0.servers.server1]
+      url = "h2c://localhost:8045"
+
+  [backends.jfac_01ehmtb0dzw5h508bzcs8a1kw4-2f2044a92002-1]
+    [backends.jfac_01ehmtb0dzw5h508bzcs8a1kw4-2f2044a92002-1.servers.server1]
+      url = "http://localhost:8040"
+

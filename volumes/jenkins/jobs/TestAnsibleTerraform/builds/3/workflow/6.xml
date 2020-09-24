@@ -1,0 +1,27 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.5">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.82">
+    <parentIds>
+      <string>5</string>
+    </parentIds>
+    <id>6</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.EnvStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.82">
+      <arguments>
+        <entry>
+          <string>overrides</string>
+          <list>
+            <string>ANSIBLE=/usr/bin/ansible</string>
+          </list>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.40">
+      <startTime>1600905519112</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkinsci.plugins' artifactId='managed-scripts' version='1.4'><l:dependency name='Managed Scripts' groupId='org.jenkinsci.plugins' artifactId='managed-scripts' version='1.4' url='https://wiki.jenkins-ci.org/display/JENKINS/Managed+Script+Plugin'><l:description>Managed scripts are shell script which are managed centrally by an administrator and can be referenced as a build step within jobs.</l:description></l:dependency></l:dependencies>

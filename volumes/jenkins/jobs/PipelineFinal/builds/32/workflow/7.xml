@@ -1,0 +1,40 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.5">
+  <node class="cps.n.StepEndNode" plugin="workflow-cps@2.82">
+    <parentIds>
+      <string>6</string>
+    </parentIds>
+    <id>7</id>
+    <startId>3</startId>
+  </node>
+  <actions>
+    <wf.a.TimingAction plugin="workflow-api@2.40">
+      <startTime>1600875614376</startTime>
+    </wf.a.TimingAction>
+    <wf.a.ErrorAction plugin="workflow-api@2.40">
+      <error class="org.codehaus.plexus.util.xml.pull.XmlPullParserException" plugin="pipeline-utility-steps@2.6.1">
+        <detailMessage>only whitespace content allowed before start tag and not p (position: START_DOCUMENT seen p... @1:1) </detailMessage>
+        <stackTrace>
+          <trace>org.codehaus.plexus.util.xml.pull.MXParser.parseProlog(MXParser.java:1862)</trace>
+          <trace>org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1698)</trace>
+          <trace>org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1317)</trace>
+          <trace>org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3856)</trace>
+          <trace>org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595)</trace>
+          <trace>org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:609)</trace>
+          <trace>org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:638)</trace>
+          <trace>org.jenkinsci.plugins.pipeline.utility.steps.maven.ReadMavenPomStep$Execution.run(ReadMavenPomStep.java:151)</trace>
+          <trace>org.jenkinsci.plugins.pipeline.utility.steps.maven.ReadMavenPomStep$Execution.run(ReadMavenPomStep.java:124)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)</trace>
+          <trace>java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)</trace>
+          <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)</trace>
+          <trace>java.base/java.lang.Thread.run(Thread.java:834)</trace>
+        </stackTrace>
+        <suppressedExceptions class="empty-list"/>
+        <row>1</row>
+        <column>1</column>
+      </error>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>

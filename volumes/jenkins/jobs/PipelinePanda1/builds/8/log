@@ -1,0 +1,791 @@
+Started by user [8mha:////4KAZa2T8wm7stt23rJ1FHk3fd3Aj1c/9xBMUpF//fwRJAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZu/dLi1CL9gsS8lEQA9JRhvsAAAAA=[0mpanda@panda.pl
+Lightweight checkout support not available, falling back to full checkout.
+Checking out git https://github.com/JeanneBM/projektowe.git into /var/jenkins_home/workspace/PipelinePanda1@script to read Jenkinsfile
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/JeanneBM/projektowe.git # timeout=10
+Fetching upstream changes from https://github.com/JeanneBM/projektowe.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.11.0'
+ > git fetch --tags --progress -- https://github.com/JeanneBM/projektowe.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse feature/final^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/feature/final^{commit} # timeout=10
+Checking out Revision 24cea9cbe370888d03e174b63d97d5f25d74c582 (refs/remotes/origin/feature/final)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 24cea9cbe370888d03e174b63d97d5f25d74c582 # timeout=10
+Commit message: "Update pom.xml"
+ > git rev-list --no-walk 24cea9cbe370888d03e174b63d97d5f25d74c582 # timeout=10
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4O6OOdB7RT8Hw/daqC1d7TEYhS8V3xu+CUfubrwL7O6mAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4FzA1ZFp97URRZw76i2oXdkZEvmCMrVJeNeL3TT5CV9QAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4PoVkcEz2h9l6/qIPmn3FQ/qbM9euEKPkAqQ6sgaIY+/AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgYB/eT83ILSktQi/eCcxLJUfQCng2qgxQAAAA==[0mSlave in /home/workspace/PipelinePanda1
+[8mha:////4Mldl8TkQs3uc03IDXk6vLSR2j62ir+PwBdCAEynYt9AAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4FkxFkJZYeiiA5TZh33BArVuu0ZAfa3IS0WbSDmargrfAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4P5NNH2nOTK7KQrw+ODQA7OSG81QQ7bDj0hsTu1AMmjtAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4GxI6VXmIqpi4PDZCV0i3l7NpaGA7A49O7CI0+OUU2/PAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/JeanneBM/projektowe.git
+ > git init /home/workspace/PipelinePanda1 # timeout=10
+Fetching upstream changes from https://github.com/JeanneBM/projektowe.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+ > git fetch --tags --progress -- https://github.com/JeanneBM/projektowe.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+Checking out Revision 24cea9cbe370888d03e174b63d97d5f25d74c582 (refs/remotes/origin/feature/final)
+ > git config remote.origin.url https://github.com/JeanneBM/projektowe.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse feature/final^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/feature/final^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 24cea9cbe370888d03e174b63d97d5f25d74c582 # timeout=10
+Commit message: "Update pom.xml"
+[8mha:////4Hy3yXtPjXlhWPfJxG45ifaAk4YdunUXhXwwkpLJjpXkAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4Caf2vWpc3+8rNasrGobcXgNuyGpF/VnLqwt/1MZXzaCAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4GhukGfffPp6roNWMGouyZnjXAqL/28Bl2xfYABmxo1hAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4JxvjYFdHUKHOFutkpG4STdqyJOXflZd4FFI++eZ8w/dAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4IdFBkUijSgmxkiFP+/BSk2/9SWXBfdvbythb7E1frvCAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggysXWsbBkaT4AJIoT5nwCRVJ7Iq3kH0cxYucXOvm3e8wXrGOBIQTOrcDAYO8O8m3RZLFMYro4ys3RhHWEkp5hQWVCvTgsKSgqWVDWsOGwUdo6iQZ1gy628y8ZJ1M05hfIdONSmH+EBFS/mJEP6whxgd5v6SPjz/BXA7BPUbfupvX8DpQJrNb4AAAA=[0m[Pipeline] readMavenPom
+[8mha:////4JXqL/rKd6pkjyXVfn1KKJzmbWshWw51bp38orAZSqLxAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyGUvHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzD5B3baf2vs35DNwLL4AAAA=[0m[Pipeline] readMavenPom
+[8mha:////4DvmriwxR2vQCYg32FOzZCbyMxIPwJc6ALPeGykvKeX0AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUldgQE2uUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hioGOFEwzGnsLMbWst6PZk4sU+hunjJzdGUtYSSvmdBZkNLntQpKGlYVJWw4bDW2nqJFk2DHnXzI2ks09SWFeTtyKK0a4AkFn8lJhvQtU4D9fVSR8Mf5C4CpT1A2zWKH5Vl9AHLv803CAAAA[0m[Pipeline] withEnv
+[8mha:////4DocekdQwIPIMtUBCSbKQY6x3fnxnw46EOpVs9UdA+ARAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] {
+[8mha:////4P+Mz9ZfkxqLVTeRe4tcDPzKqJthwbXkdHWsrcWpV+oRAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] stage
+[8mha:////4HYdaBPuuBSuyusNfZE01LI7fttpBycQ3wsYYiMe1cpHAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] { (Declarative: Tool Install)
+[8mha:////4B8ZOYb8Vtc3MEUCGCTx9/htCKambN96Y1T2wgD88EeNAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKpAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHNxXfVKy+AAAA[0m[Pipeline] tool
+[8mha:////4Oq60J3wjknBTjQosdNaeS1bza4wC+p3yze4ild6va2mAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKoQQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN1TuT7W+AAAA[0m[Pipeline] envVarsForTool
+[8mha:////4IcHF6oLqPUDqJuywPINhNQ9FdQ2in3lzb1zww4/Bi9GAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICNBQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AGHKGa5vgAAAA==[0m[Pipeline] }
+[8mha:////4MRL66nSzj7ccUAqWALaQySZD00bLum7hz70HcgBEjIOAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiUNAgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AG0yz0FvgAAAA==[0m[Pipeline] // stage
+[8mha:////4P1lQ+MwYyJtmhHK7zMfA77FbtzqeqZTmjlzRGvfSexOAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUVGJCTF2jLJwgJCGkjf4vSUo7cSKuxh0IVGLCg2Vbst7zBVUMcKRgWWewdxiVY4MfbU5sotBfPE2sozNThJG8YcJMgrRplyooGVhUlLDisDaoPEWHNsGGd/Iuay/R1qcU8nbgUDp9gwcUPJOTDOlb5gDb66gj4Y/zFwDzkKDc7bM1zedZvQFwZZsawgAAAA==[0m[Pipeline] withEnv
+[8mha:////4GQh7Mhsh2PSDi6jmpP/cHZbyxy+OtNlVTSmY8OnhTyeAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUKiNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPpnFij8IAAAA=[0m[Pipeline] {
+[8mha:////4EwRgTrxubCL/TDzxgr8Jij2KMOJYgDOW7fC1sXtfhEzAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAd6e6VPCAAAA[0m[Pipeline] stage
+[8mha:////4INnPdhtgwJr2LvR14tRYGFmbvyyG1McJnOqeZoi1/q5AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQjAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/hYjrHCAAAA[0m[Pipeline] { (Clear running apps)
+[8mha:////4KCegyCPcZJ1VNeK2k0XbcAoOQsNQPR7gUtRw1BK+wnxAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUGDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEIWoEpvgAAAA==[0m[Pipeline] tool
+[8mha:////4OKoK2sqCA23gNL3mjpyZJ6c+9LMaBXJxCQWnKyQ21c0AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiISEKRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpTb3af24Q1Ja5owvgAAAA==[0m[Pipeline] envVarsForTool
+[8mha:////4Fdo8/EWcXcv3e5AgG8udedH1PhjSh3FquNr0ZSQZ6aVAAAAqB+LCAAAAAAAAP9tjUEKwjAURH8rXbh16SFSEARBXHUbsvEEsYkxbfi//qS2K0/k1byDrQVXzmKYGRje6w1FZDgRO9FYbD3G2osu9G5KYiBur4EG0dBF1ISRghXKDoqMrZaqKFlYlOWwkrC2WAeKHl2CjWz0Q5dBoyvPiaftKCH35g5PyORETprTt4wM21tvIuGP8xcAY5cg3+1nO8zP4gPmlJ7MwgAAAA==[0m[Pipeline] withEnv
+[8mha:////4LgLubbQMM3jXzGf8TeOg2xaVKSmNtCl1vsxIY3bGFqQAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgIhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0QKVszCAAAA[0m[Pipeline] {
+[8mha:////4IFjfnT7+wmCn1V2qreOufcwGGhMKrH+A+xwFJ3AnlvNAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AHN/bm5vgAAAA==[0m[Pipeline] sh
++ docker rm -f pandaapp
+pandaapp
+[8mha:////4LW0u/j9uCEugq5ZwWVesV8lQkSdFvQUCoG2dugyo8pzAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AFSjtgYvgAAAA==[0m[Pipeline] }
+[8mha:////4J0e1V9p+Jls9KpQg8o/SGwzYiH1p4vzrIh6gyjZ1kHfAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihQYJUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5r3PVhw9qzEvpvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4D+O+2jJIw+5Pp2YBPyKEYE+zs8PovM2zYiJikkB3mbhAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRiKgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AFyY6ZcvgAAAA==[0m[Pipeline] }
+[8mha:////4EPYqWarw22dppImZnjcbcl3tcX8WX6mluBTLbr+LHlkAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQTpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOWhzrWvP1xjpDa+AAAA[0m[Pipeline] // stage
+[8mha:////4E4Y379qyaL2ZayHMQbLWx0+SnYhTA2Jr/N3D4HEobbgAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUomJCTF2jLJwgJCGkjf4vSUo7cSKuxh0IVGLCg2Vbst7zBVUMcKRgWWewdxiVY4MfbU5sotBfPE2sozNThJG8YcJMgrRplyooGVhUlLDisDaoPEWHNsGGd/Iuay/R1qcU8nbgUDp9gwcUPJOTDOlb5gDb66gj4Y/zFwDzkKDcNdma/edZvQHPRsI+wgAAAA==[0m[Pipeline] stage
+[8mha:////4HYClCfN/0XO3C1Tb3FmrINkmNLuyw10nuDMlm3VaT4tAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD02yRsvCAAAA[0m[Pipeline] { (Get Code)
+[8mha:////4NBMVbm1WbPT/ttEx1/5OluAXszRSVinRsbglTX3dxaiAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIEGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAF9GxrMvgAAAA==[0m[Pipeline] tool
+[8mha:////4FV/kAVNk6eIg3lzIHbani0jQivhaqxGWdNZGYz1diDrAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSICEkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpTb3af24Q2yB4JLvgAAAA==[0m[Pipeline] envVarsForTool
+[8mha:////4Hzx52JrmcYIHZTwXWleuz7p4Ex4Z8i5hvQxOM8xfwVgAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QEJCiKlrlIUThCaEtNH/5SelnTgRV+MOtFRiwoNlW7Le6w1FZDgRO9FYbD3G2osu9G5KYiBur4EG0dBF1ISRghXKDoqMrZaqKFlYlOWwkrC2WAeKHl2CjWz0Q5dBoyvPiaftKCH35g5PyORETprTt4wM21tvIuGP8xcAY5cg3+1nO8zP4gOZZvKjwgAAAA==[0m[Pipeline] withEnv
+[8mha:////4I5qR22dLTWXv8HMk55oq+kKiiRrYwi2fZYMgcBArtf6AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUCRaEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g0Z/aLSwgAAAA==[0m[Pipeline] {
+[8mha:////4O1uAxKY/cfjIzGDQj665zGoMUOqxcInPLNbCWJiK6IvAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICEh2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBl2WGva+AAAA[0m[Pipeline] checkout
+The recommended git tool is: NONE
+No credentials specified
+Fetching changes from the remote Git repository
+Checking out Revision 24cea9cbe370888d03e174b63d97d5f25d74c582 (refs/remotes/origin/feature/final)
+Commit message: "Update pom.xml"
+[8mha:////4C212qgbH0d/9QYwzXpQPG0hxl73b9Xy7SxXOjfBqDkfAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nffWr7BlDdbXS+AAAA[0m[Pipeline] }
+[8mha:////4J21vR5duAdzh8sa6yszG/SA4ZLCUEJ63TSDCtMqQa19AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJShAYhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AGWIKyJvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4JMcKCHchkZUbzR6C5QQcosy6X/GRbFgG5/SfabYMLcAAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIpiGgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AG/DRYEvgAAAA==[0m[Pipeline] }
+[8mha:////4Fc6Dg9Nygv/k1AfbO6MrPplO9MkrTslyv+0yAJoizaeAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSQCpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOWhzrWvP6CPQ1a+AAAA[0m[Pipeline] // stage
+[8mha:////4NYC+tS5r3czhv7FOatWi6J8RUr4Edw7L76Gci1Rq8YoAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAsSCOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK52Wbb7T/P6g3vCvF9wgAAAA==[0m[Pipeline] stage
+[8mha:////4IRV7LLOdAd5Gmky8pvAL/Y3e6x3fufUzyNyEcHSVQpaAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QTAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD+jQxyjCAAAA[0m[Pipeline] { (Build and Junit)
+[8mha:////4AVMzNKOQ6mNr4FTa0AjpR4RWFOZQdDvUZyg2C/H2b1eAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSIIGEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAGaE3/ivgAAAA==[0m[Pipeline] tool
+[8mha:////4CnTkPKLEhvSJDJDQUK/lPBtVBipjDY9jJ3WuTK6rGmVAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSICGEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHbImT7vgAAAA==[0m[Pipeline] envVarsForTool
+[8mha:////4JrgQott9Nc9IBuJKJGnC4+EEMqha7VF2jfB6WGHPJjjAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoiUAcSAOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g0kNDtSwgAAAA==[0m[Pipeline] withEnv
+[8mha:////4CCx8erPYDD/b7t3H2VXuooz296+0IQnWXfgiCkRzDr7AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUBibE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAW2++SvCAAAA[0m[Pipeline] {
+[8mha:////4IVHTQXYDzW8yQQzUPFD6dFbS/GnGA1TJTlp0EbWF8tmAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFN4OkKLa+AAAA[0m[Pipeline] sh
+ > git rev-parse --is-inside-work-tree # timeout=10
+ > git config remote.origin.url https://github.com/JeanneBM/projektowe.git # timeout=10
+Fetching upstream changes from https://github.com/JeanneBM/projektowe.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+ > git fetch --tags --progress -- https://github.com/JeanneBM/projektowe.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse feature/final^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/feature/final^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 24cea9cbe370888d03e174b63d97d5f25d74c582 # timeout=10
++ mvn clean install
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< pl.pandait:panda >--------------------------
+[INFO] Building panda 0.0.2-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ panda ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ panda ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ panda ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/workspace/PipelinePanda1/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ panda ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/workspace/PipelinePanda1/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ panda ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/workspace/PipelinePanda1/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ panda ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running pl.pandait.panda.HelloControllerTest
+23:22:31.987 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+23:22:31.990 [main] INFO org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.18.Final
+23:22:32.001 [main] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+23:22:32.016 [main] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+23:22:32.016 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+23:22:32.017 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+23:22:32.021 [main] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+23:22:32.022 [main] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+23:22:32.022 [main] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+23:22:32.023 [main] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+23:22:32.123 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+23:22:32.124 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+23:22:32.124 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+23:22:32.124 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+23:22:32.124 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+23:22:32.201 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 1 mappings in <unknown>
+23:22:32.384 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+23:22:32.422 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+23:22:32.446 [main] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+23:22:32.446 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+23:22:32.450 [main] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
+23:22:32.450 [main] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
+23:22:32.450 [main] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@11963225
+23:22:32.450 [main] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3f3c966c
+23:22:32.450 [main] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+23:22:32.450 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 4 ms
+23:22:32.485 [main] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - GET "/greeting?name=Panda", parameters={masked}
+23:22:32.489 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to pl.pandait.panda.HelloController#greeting(String, Model)
+23:22:32.529 [main] DEBUG org.springframework.web.servlet.view.InternalResourceView - View [InternalResourceView], model {name=Panda}
+23:22:32.529 [main] DEBUG org.springframework.web.servlet.view.InternalResourceView - Forwarding to [greeting_template]
+23:22:32.530 [main] DEBUG org.springframework.mock.web.MockRequestDispatcher - MockRequestDispatcher: forwarding to [greeting_template]
+23:22:32.530 [main] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 200 OK
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.918 sec - in pl.pandait.panda.HelloControllerTest
+Running pl.pandait.panda.PandaApplicationTest
+23:22:32.592 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+23:22:32.594 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+23:22:32.608 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [pl.pandait.panda.PandaApplicationTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+23:22:32.619 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [pl.pandait.panda.PandaApplicationTest], using SpringBootContextLoader
+23:22:32.621 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [pl.pandait.panda.PandaApplicationTest]: class path resource [pl/pandait/panda/PandaApplicationTest-context.xml] does not exist
+23:22:32.622 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [pl.pandait.panda.PandaApplicationTest]: class path resource [pl/pandait/panda/PandaApplicationTestContext.groovy] does not exist
+23:22:32.622 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [pl.pandait.panda.PandaApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:22:32.623 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [pl.pandait.panda.PandaApplicationTest]: PandaApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:22:32.701 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [pl.pandait.panda.PandaApplicationTest]
+23:22:32.952 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/workspace/PipelinePanda1/target/classes/pl/pandait/panda/PandaApplication.class]
+23:22:32.953 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration pl.pandait.panda.PandaApplication for test class pl.pandait.panda.PandaApplicationTest
+23:22:33.029 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [pl.pandait.panda.PandaApplicationTest]: using defaults.
+23:22:33.029 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+23:22:33.036 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+23:22:33.037 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+23:22:33.038 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4fe875be, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@677b8e13, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4a9486c0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4c27d39d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@40ee0a22, org.springframework.test.context.event.EventPublishingTestExecutionListener@7bde1f3a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@15923407, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@67dba613, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@57540fd0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5cf8edcf, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@58cec85b]
+23:22:33.040 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@444548a0 testClass = PandaApplicationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3766c667 testClass = PandaApplicationTest, locations = '{}', classes = '{class pl.pandait.panda.PandaApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@27e32fe4, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3d7cc3cb, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a31c2ee, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@779de014], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+23:22:33.086 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.4.RELEASE)
+
+2020-09-23 23:22:33.416  INFO 26904 --- [           main] pl.pandait.panda.PandaApplicationTest    : Starting PandaApplicationTest on vagrant with PID 26904 (started by root in /home/workspace/PipelinePanda1)
+2020-09-23 23:22:33.417  INFO 26904 --- [           main] pl.pandait.panda.PandaApplicationTest    : No active profile set, falling back to default profiles: default
+2020-09-23 23:22:34.564  INFO 26904 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 23:22:34.590  INFO 26904 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-09-23 23:22:34.751  INFO 26904 --- [           main] pl.pandait.panda.PandaApplicationTest    : Started PandaApplicationTest in 1.656 seconds (JVM running for 3.756)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.534 sec - in pl.pandait.panda.PandaApplicationTest
+2020-09-23 23:22:35.136  INFO 26904 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ panda ---
+[INFO] Building jar: /home/workspace/PipelinePanda1/target/panda-0.0.2-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.2.4.RELEASE:repackage (repackage) @ panda ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ panda ---
+[INFO] Installing /home/workspace/PipelinePanda1/target/panda-0.0.2-SNAPSHOT.jar to /root/.m2/repository/pl/pandait/panda/0.0.2-SNAPSHOT/panda-0.0.2-SNAPSHOT.jar
+[INFO] Installing /home/workspace/PipelinePanda1/pom.xml to /root/.m2/repository/pl/pandait/panda/0.0.2-SNAPSHOT/panda-0.0.2-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.782 s
+[INFO] Finished at: 2020-09-23T23:22:37Z
+[INFO] ------------------------------------------------------------------------
+[8mha:////4D0Q3rSWQ3B6MR7UKsWaq0WRTtcVcjAdUQ+FCilLqrIpAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbN5YEWne+AAAA[0m[Pipeline] }
+[8mha:////4Go/ju73K885vSlxVK/lrrlzpAgHyqQfjDITKNZJdNKpAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCARWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nffWr7BrgEWB2+AAAA[0m[Pipeline] // withEnv
+[8mha:////4DiH6wNSlorKxNvdXdrmai5B55ZFuUXmq/vKqxZygfHXAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMJpiCgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AH/c3tRvgAAAA==[0m[Pipeline] }
+[8mha:////4MY3xwgn6yyHiD+LF6iArRa6Es3Xjpv8Dg4zJpAqslIZAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSQBpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOWhzrWvP8cx6KC+AAAA[0m[Pipeline] // stage
+[8mha:////4OMC2NeribqbSItT9momOx7jOOMLx5NQKvCcM0Sn7OJzAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAiEG1Ik16sIJQhNC0uj/kqSkEyfiatyBQCUmPFi2Jes9X1AFDw15zazC3mDoDBvcqHNiiXx/cZSYpTPrCAM5xVqVWpLqONeWooJZRQkLDkuFnaNgUEdYcSvuonYCdX2KPm8HDqWRN3hAwTM5Ch+/ZfKwvo4yEP44fwEwDRHKzTbbbv95Vm/+0toQwgAAAA==[0m[Pipeline] stage
+[8mha:////4NHRRfxfBCb6LvBzQ9EO0x1jq5gbuBj/jougbFJHQq7eAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QiAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LDyb6zSXCAAAA[0m[Pipeline] { (Build Docker image)
+[8mha:////4DuvFcgnDlR8F6WMNNlTktBhaGbu3FYa2FL0cse5xlueAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIYEQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN5s4RMC+AAAA[0m[Pipeline] tool
+[8mha:////4B7Cb7Nnz2yyXOq1MDmfNtG8A1JMyH1Lba5/H2XiIfSlAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCA0JCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw+LPcATvgAAAA==[0m[Pipeline] envVarsForTool
+[8mha:////4E/aOZNE77lYb5J9LKIxSC4DjGFmrBrWcVX9sITmn9z2AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDCAk1Ik16sIJQhNC0uj/kqSkEyfiatyBQCUmPFi2Jes9X1AFDw15zazC3mDoDBvcqHNiiXx/cZSYpTPrCAM5xVqVWpLqONeWooJZRQkLDkuFnaNgUEdYcSvuonYCdX2KPm8HDqWRN3hAwTM5Ch+/ZfKwvo4yEP44fwEwDRHK7T7bbvN5Vm+1RdKgwgAAAA==[0m[Pipeline] withEnv
+[8mha:////4LZCqDJdeOO8AVzaJsgFlM/DcjymYebN38VTvTCb/BeAAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUMLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD27blSrCAAAA[0m[Pipeline] {
+[8mha:////4IVcOKfaVILVS3gfnL49DGKKH4ZkOzhemPZMv/+z2N0hAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK//dQuvAHlNhISvgAAAA==[0m[Pipeline] sh
++ mvn package -Pdocker
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< pl.pandait:panda >--------------------------
+[INFO] Building panda 0.0.2-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ panda ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ panda ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ panda ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/workspace/PipelinePanda1/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ panda ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ panda ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running pl.pandait.panda.HelloControllerTest
+23:22:41.662 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+23:22:41.664 [main] INFO org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.18.Final
+23:22:41.670 [main] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+23:22:41.680 [main] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+23:22:41.680 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+23:22:41.680 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+23:22:41.683 [main] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+23:22:41.684 [main] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+23:22:41.684 [main] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+23:22:41.684 [main] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+23:22:41.759 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+23:22:41.760 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+23:22:41.760 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+23:22:41.760 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+23:22:41.760 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+23:22:41.829 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 1 mappings in <unknown>
+23:22:42.051 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+23:22:42.070 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+23:22:42.090 [main] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+23:22:42.090 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+23:22:42.093 [main] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
+23:22:42.094 [main] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
+23:22:42.094 [main] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@41de5768
+23:22:42.095 [main] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5f577419
+23:22:42.095 [main] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+23:22:42.096 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 6 ms
+23:22:42.130 [main] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - GET "/greeting?name=Panda", parameters={masked}
+23:22:42.133 [main] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to pl.pandait.panda.HelloController#greeting(String, Model)
+23:22:42.153 [main] DEBUG org.springframework.web.servlet.view.InternalResourceView - View [InternalResourceView], model {name=Panda}
+23:22:42.153 [main] DEBUG org.springframework.web.servlet.view.InternalResourceView - Forwarding to [greeting_template]
+23:22:42.153 [main] DEBUG org.springframework.mock.web.MockRequestDispatcher - MockRequestDispatcher: forwarding to [greeting_template]
+23:22:42.153 [main] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 200 OK
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.732 sec - in pl.pandait.panda.HelloControllerTest
+Running pl.pandait.panda.PandaApplicationTest
+23:22:42.175 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+23:22:42.176 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+23:22:42.185 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [pl.pandait.panda.PandaApplicationTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+23:22:42.194 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [pl.pandait.panda.PandaApplicationTest], using SpringBootContextLoader
+23:22:42.195 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [pl.pandait.panda.PandaApplicationTest]: class path resource [pl/pandait/panda/PandaApplicationTest-context.xml] does not exist
+23:22:42.195 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [pl.pandait.panda.PandaApplicationTest]: class path resource [pl/pandait/panda/PandaApplicationTestContext.groovy] does not exist
+23:22:42.195 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [pl.pandait.panda.PandaApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:22:42.196 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [pl.pandait.panda.PandaApplicationTest]: PandaApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:22:42.221 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [pl.pandait.panda.PandaApplicationTest]
+23:22:42.290 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/workspace/PipelinePanda1/target/classes/pl/pandait/panda/PandaApplication.class]
+23:22:42.290 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration pl.pandait.panda.PandaApplication for test class pl.pandait.panda.PandaApplicationTest
+23:22:42.313 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [pl.pandait.panda.PandaApplicationTest]: using defaults.
+23:22:42.313 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+23:22:42.321 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+23:22:42.321 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+23:22:42.321 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7a24eb3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6c37bd27, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@25d3cfc8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@30331109, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2571066a, org.springframework.test.context.event.EventPublishingTestExecutionListener@74fe5966, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4fe875be, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@677b8e13, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4a9486c0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4c27d39d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@40ee0a22]
+23:22:42.326 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@4d23015c testClass = PandaApplicationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@383f1975 testClass = PandaApplicationTest, locations = '{}', classes = '{class pl.pandait.panda.PandaApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@41a6d121, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6e28bb87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3e6f3bae, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@464a4442], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+23:22:42.341 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.4.RELEASE)
+
+2020-09-23 23:22:42.537  INFO 27015 --- [           main] pl.pandait.panda.PandaApplicationTest    : Starting PandaApplicationTest on vagrant with PID 27015 (started by root in /home/workspace/PipelinePanda1)
+2020-09-23 23:22:42.538  INFO 27015 --- [           main] pl.pandait.panda.PandaApplicationTest    : No active profile set, falling back to default profiles: default
+2020-09-23 23:22:43.459  INFO 27015 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 23:22:43.481  INFO 27015 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-09-23 23:22:43.615  INFO 27015 --- [           main] pl.pandait.panda.PandaApplicationTest    : Started PandaApplicationTest in 1.259 seconds (JVM running for 2.619)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.617 sec - in pl.pandait.panda.PandaApplicationTest
+2020-09-23 23:22:43.866  INFO 27015 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ panda ---
+[INFO] Building jar: /home/workspace/PipelinePanda1/target/panda-0.0.2-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.2.4.RELEASE:repackage (repackage) @ panda ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- dockerfile-maven-plugin:1.4.0:build (default) @ panda ---
+[INFO] Building Docker context /home/workspace/PipelinePanda1
+[INFO] 
+[INFO] Image will be built as panda:0.0.2-SNAPSHOT
+[INFO] 
+[INFO] Step 1/4 : FROM openjdk:11.0
+[INFO] 
+[INFO] Pulling from library/openjdk
+[INFO] Digest: sha256:a4251db6673011303dde5fe2ce76f7b90af67f63f6c6b63d7271cfbec98b9864
+[INFO] Status: Image is up to date for openjdk:11.0
+[INFO]  ---> 6f56b78f4e05
+[INFO] Step 2/4 : ARG JAR_FILE=target/*.jar
+[INFO] 
+[INFO]  ---> Using cache
+[INFO]  ---> aedd605de217
+[INFO] Step 3/4 : COPY ${JAR_FILE} app.jar
+[INFO] 
+[INFO]  ---> 5bb137b9b367
+[INFO] Step 4/4 : ENTRYPOINT ["java","-jar","/app.jar"]
+[INFO] 
+[INFO]  ---> Running in 2fc7c7d5eefa
+[INFO] Removing intermediate container 2fc7c7d5eefa
+[INFO]  ---> 5e386afacc5c
+[INFO] Successfully built 5e386afacc5c
+[INFO] Successfully tagged panda:0.0.2-SNAPSHOT
+[INFO] 
+[INFO] Detected build of image with id 5e386afacc5c
+[INFO] Building jar: /home/workspace/PipelinePanda1/target/panda-0.0.2-SNAPSHOT-docker-info.jar
+[INFO] Successfully built panda:0.0.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.587 s
+[INFO] Finished at: 2020-09-23T23:22:55Z
+[INFO] ------------------------------------------------------------------------
+[8mha:////4DkiVLHYo4WWhkU7E4uiIu6X3T24ESoCbofY+seIqqePAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDud5/avgHKLJPpvgAAAA==[0m[Pipeline] }
+[8mha:////4BPEUYo6KHa/xRay5JhZ/AxxNd28OoQveWAx+Oi7Im4qAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCmgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbN9Wuxru+AAAA[0m[Pipeline] // withEnv
+[8mha:////4KK6LK+Z8xhZTcI8vFpNsM+rAg/M0BnXNL4GSzxvogOIAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKpiJAQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AEcN6NvvgAAAA==[0m[Pipeline] }
+[8mha:////4JnsgI9EbhnpQIXH45iQD2AgxK9pe9lXpMBaMmE2SqqdAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSQQpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOWhzrWvPyj5QDS+AAAA[0m[Pipeline] // stage
+[8mha:////4OJgbUQwLTqvY8/ndy3focX9Y2jdYIQS9ZAI2x08FevcAAAAqB+LCAAAAAAAAP9tjUEKwjAURH8rXbh16SFSUBBBunIbuvEEsYkxafi/JqnpyhN5Ne9gtODKWQwzA8N7vqAKHhrymlmFvcHQGTa4UefEEvn+4igxS2fWEQZyirUqtSTVca4tRQWzihIWHJYKO0fBoI6w4lbcRe0E6voUfd4OHEojb/CAgmdyFD5+y+RhfR1lIPxx/gJgGiKUm2223f7zrN62emTQwgAAAA==[0m[Pipeline] stage
+[8mha:////4OWQi8KIpXw2dapaxPXweccFVTX+NOcQuK5PCCB4RwvaAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QyDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASgVHzvCAAAA[0m[Pipeline] { (Run Docker app)
+[8mha:////4M6yhW17Q+f8dGdP98YBVEDl2HRi5S7eAuezJtObgcYtAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCBUIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AHrW/o6vgAAAA==[0m[Pipeline] tool
+[8mha:////4KxnaE6yPNUb+7bBz4buTWViu4Zky0lWATRGU18LWa/yAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiGhBCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw+qauEjvgAAAA==[0m[Pipeline] envVarsForTool
+[8mha:////4ONdkSUIt5K9x42iJ1sAV0tcRkuJnynxLRwh0MAp50NlAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgAh1Ik16sIJQhNC0uj/kqSkEyfiatyBQCUmPFi2Jes9X1AFDw15zazC3mDoDBvcqHNiiXx/cZSYpTPrCAM5xVqVWpLqONeWooJZRQkLDkuFnaNgUEdYcSvuonYCdX2KPm8HDqWRN3hAwTM5Ch+/ZfKwvo4yEP44fwEwDRHK7T7bbvN5Vm+fMSE2wgAAAA==[0m[Pipeline] withEnv
+[8mha:////4AkaDX/3Dri5GGj72h+J7T9BhpPBEX8hDuMPuGwyaopdAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUgoEBMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLkh91s+/lZfAARKflFwgAAAA==[0m[Pipeline] {
+[8mha:////4HjmsajTZVEicah8Bz92RcJt1pu0CBWgOVb9SPl1YU7aAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgESBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK//dQuvAE/wUw2vgAAAA==[0m[Pipeline] sh
++ docker run -d -p 0.0.0.0:8080:8080 --name pandaapp -t panda:0.0.2-SNAPSHOT
+85909d8eb1017507e436d9ec3fdeda5a2671ff7fe800f788ccff6b4e2093eec9
+[8mha:////4NGpF4Sf48qybzV4OWRRJp7sBMofvUFJu8BL29nFs7ElAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIESBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDud5/avgEM9aTqvgAAAA==[0m[Pipeline] }
+[8mha:////4I4ugUdWFy5XMJIdAzSOv1hYiZAQWZja059MR8tiVq1GAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUUCBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDud5/avgE0tzcbvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4OIQoUuXn4pN6/8nvhtEWUNkDoD4LNl3tEiH3Bp5H+Q5AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMLpiBCiSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGVd59ofPliMol6+AAAA[0m[Pipeline] }
+[8mha:////4PNMTHJBaB7cSZi1NdGWZTBCm86hMuCpvznq7OvTOz6pAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSQSREldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOWhzrWvPxsO89i+AAAA[0m[Pipeline] // stage
+[8mha:////4Fr5xQig8BRJFVtbry2552QZSeMYu1GI0F5DEU9yNTgyAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUggEh1Ik16sIJQhNC0uj/kqSkEyfiatyBQCUmPFi2Jes9X1AFDw15zazC3mDoDBvcqHNiiXx/cZSYpTPrCAM5xVqVWpLqONeWooJZRQkLDkuFnaNgUEdYcSvuonYCdX2KPm8HDqWRN3hAwTM5Ch+/ZfKwvo4yEP44fwEwDRHKzTbbbv95Vm+nok+9wgAAAA==[0m[Pipeline] stage
+[8mha:////4AnG8puwVWWWqRzL4Lb6gfKRjiaCT5jCivqZNuT/wQUWAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoiUDRDqxBp14QShCSFp9H9JUtKJE3E17kCgEhMeLNuS9Z4vqIKHhrxmVmFvMHSGDW7UObFEvr84SszSmXWEgZxirUotSXWca0tRwayihAWHpcLOUTCoI6y4FXdRO4G6PkWftwOH0sgbPKDgmRyFj98yeVhfRxkIf5y/AJiGCOV2n223+TyrNxKsBBbCAAAA[0m[Pipeline] { (Test Selenium)
+[8mha:////4IhwCY1aT1e+buYEtme8IQqKQ9zAte6GYCJ+IioibCDJAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICHRKiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBnZ6r6i+AAAA[0m[Pipeline] tool
+[8mha:////4IvCW+Z2R968ql6Rn5oD+TJHdwSi465EvWw36xxcDYCQAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCqJAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFN7UpgoO+AAAA[0m[Pipeline] envVarsForTool
+[8mha:////4BVJ9kf1GGoqnu6P9EWoVSXfNt3qAkVeq8+Y7dx5+1l1AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUiQUJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLkh91s+/lZfABIf0mZwgAAAA==[0m[Pipeline] withEnv
+[8mha:////4Lbm+/cpdWBCZaGu13DjxCvzR7Gzemi+cKqoqaimz1ORAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0gAEJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLkh91s+/lZfADxKa4dwgAAAA==[0m[Pipeline] {
+[8mha:////4EqO2nWhXt6q/vjIEVrPTLAnhQC+DE4J6RruohulM/ubAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSgISEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK//dQuvAFhm4w4vgAAAA==[0m[Pipeline] sh
++ mvn test -Pselenium
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< pl.pandait:panda >--------------------------
+[INFO] Building panda 0.0.2-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ panda ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ panda ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ panda ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/workspace/PipelinePanda1/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ panda ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ panda ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running pl.pandait.panda.PandaApplicationSeleniumTest
+Sep 23, 2020 11:23:04 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+Sep 23, 2020 11:23:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Uruchamiam test 1: Sprawdzenie napisu na stronie głównej
+Sep 23, 2020 11:23:13 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+Sep 23, 2020 11:23:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Uruchamiam test 2: Sprawdzenie napisu na podstronie
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.034 sec - in pl.pandait.panda.PandaApplicationSeleniumTest
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  17.963 s
+[INFO] Finished at: 2020-09-23T23:23:18Z
+[INFO] ------------------------------------------------------------------------
+[8mha:////4CouctXD5W2EiJDZ0M5bCTi8MBG/+B0tUguZU9ZOLS1tAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSIISEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDud5/avgEnfoSDvgAAAA==[0m[Pipeline] }
+[8mha:////4DQXzO10GRi0nN26kOa8HoLJt0aWrzBI0RIYTz9DON+JAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSUICEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDud5/avgEhOLzWvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4MEpiVwevF7ms9ah7mH0QU56o7YVaIclvKUwYVuJ108PAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCGQlR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMHmfoKzrT+3fTtvjvr4AAAA=[0m[Pipeline] }
+[8mha:////4EiIvxrlfqb+4avE4fsRb1kOYN4VEfk/XkfAKgJ4lOcJAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSQoSo0lppeIGJjXFi3RnbIal4EV/jD1hEomKL1c4283rDOgY4cTDYaxosxc6id6PJCycOw9XxhD1fsGOK7DS2empZ6WbBlpOGJUUJKwEbTZ3jaMkk2IpePmTlJJnqnEL+jgJKq+7whEJkc5IhfWEOsLuNKjL9PH8FMHufoDzUufb1B4Cs+4u+AAAA[0m[Pipeline] // stage
+[8mha:////4Oyk6D6BZpXX1WYTUx5vCZXSikPI636sASobCB3Im7/eAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUwYRQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCi3u2z7zedZvQEyiH/KwgAAAA==[0m[Pipeline] stage
+[8mha:////4E5J3B3PSmX67fqP1fdwtjS/yPWadZOJRg5Ab8WdU5NFAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogURoSYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+mJlT6cIAAAA=[0m[Pipeline] { (Deploy jar to artifactory)
+[8mha:////4EqUzjBB/FjhXbfykywV6vkly3f8ajPmOEDnoPaXr6eAAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi6BCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBqhInei+AAAA[0m[Pipeline] tool
+[8mha:////4BS4XuDVp1unDQH6Q1908R8DdvoVa3a/qXTmlFd/v/PMAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiRIUQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFN+l5hvG+AAAA[0m[Pipeline] envVarsForTool
+[8mha:////4O+8uIokpQKZ5ZGfRtJNCvjAYVCvzYehAx0HRuUNNKU1AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSCwIMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLkh91s+/lZfADr1xB4wgAAAA==[0m[Pipeline] withEnv
+[8mha:////4IdMCOklZJqd23XySBxo+ExJkoPcoeLpS3cPbNX4znQhAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0gQEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LDwyoG8LCAAAA[0m[Pipeline] {
+[8mha:////4D849Doz6J4k3BFFFe5X9Uy/1ph47bMJRifalcmcO6poAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0Agkhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD2IFAYXCAAAA[0m[Pipeline] configFileProvider
+provisioning config files...
+copy managed file [MavenSettings] to file:/home/workspace/PipelinePanda1@tmp/config4208622167993302933tmp
+[8mha:////4MAOiCpEclnNvWpMtzSe58u8s9vCQtMlyU/e2AbwiUP6AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0AyHE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAcawv9fCAAAA[0m[Pipeline] {
+[8mha:////4DbZ3ER2el6CQqcDMH7bkfQnyZmHbCqa8YcUlIkkaEzzAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSAkJUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDud9+ahfeGJWicb4AAAA=[0m[Pipeline] sh
++ mvn -gs /home/workspace/PipelinePanda1@tmp/config4208622167993302933tmp deploy -Dmaven.test.skip=true -e
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< pl.pandait:panda >--------------------------
+[INFO] Building panda 0.0.2-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ panda ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ panda ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ panda ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ panda ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ panda ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ panda ---
+[INFO] Building jar: /home/workspace/PipelinePanda1/target/panda-0.0.2-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.2.4.RELEASE:repackage (repackage) @ panda ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ panda ---
+[INFO] Installing /home/workspace/PipelinePanda1/target/panda-0.0.2-SNAPSHOT.jar to /root/.m2/repository/pl/pandait/panda/0.0.2-SNAPSHOT/panda-0.0.2-SNAPSHOT.jar
+[INFO] Installing /home/workspace/PipelinePanda1/pom.xml to /root/.m2/repository/pl/pandait/panda/0.0.2-SNAPSHOT/panda-0.0.2-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-deploy-plugin:2.8.2:deploy (default-deploy) @ panda ---
+Downloading from artifactory: http://artifactorycompose:8084/artifactory/libs-snapshot-local/pl/pandait/panda/0.0.2-SNAPSHOT/maven-metadata.xml
+[WARNING] Could not transfer metadata pl.pandait:panda:0.0.2-SNAPSHOT/maven-metadata.xml from/to artifactory (http://artifactorycompose:8084/artifactory/libs-snapshot-local): Transfer failed for http://artifactorycompose:8084/artifactory/libs-snapshot-local/pl/pandait/panda/0.0.2-SNAPSHOT/maven-metadata.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.357 s
+[INFO] Finished at: 2020-09-23T23:23:25Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:2.8.2:deploy (default-deploy) on project panda: Failed to retrieve remote metadata pl.pandait:panda:0.0.2-SNAPSHOT/maven-metadata.xml: Could not transfer metadata pl.pandait:panda:0.0.2-SNAPSHOT/maven-metadata.xml from/to artifactory (http://artifactorycompose:8084/artifactory/libs-snapshot-local): Transfer failed for http://artifactorycompose:8084/artifactory/libs-snapshot-local/pl/pandait/panda/0.0.2-SNAPSHOT/maven-metadata.xml: Unknown host artifactorycompose: Temporary failure in name resolution -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:2.8.2:deploy (default-deploy) on project panda: Failed to retrieve remote metadata pl.pandait:panda:0.0.2-SNAPSHOT/maven-metadata.xml: Could not transfer metadata pl.pandait:panda:0.0.2-SNAPSHOT/maven-metadata.xml from/to artifactory (http://artifactorycompose:8084/artifactory/libs-snapshot-local): Transfer failed for http://artifactorycompose:8084/artifactory/libs-snapshot-local/pl/pandait/panda/0.0.2-SNAPSHOT/maven-metadata.xml
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:215)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:957)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:289)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:193)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:566)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: org.apache.maven.plugin.MojoExecutionException: Failed to retrieve remote metadata pl.pandait:panda:0.0.2-SNAPSHOT/maven-metadata.xml: Could not transfer metadata pl.pandait:panda:0.0.2-SNAPSHOT/maven-metadata.xml from/to artifactory (http://artifactorycompose:8084/artifactory/libs-snapshot-local): Transfer failed for http://artifactorycompose:8084/artifactory/libs-snapshot-local/pl/pandait/panda/0.0.2-SNAPSHOT/maven-metadata.xml
+    at org.apache.maven.plugin.deploy.DeployMojo.deployProject (DeployMojo.java:284)
+    at org.apache.maven.plugin.deploy.DeployMojo.execute (DeployMojo.java:169)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:957)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:289)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:193)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:566)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: org.apache.maven.artifact.deployer.ArtifactDeploymentException: Failed to retrieve remote metadata pl.pandait:panda:0.0.2-SNAPSHOT/maven-metadata.xml: Could not transfer metadata pl.pandait:panda:0.0.2-SNAPSHOT/maven-metadata.xml from/to artifactory (http://artifactorycompose:8084/artifactory/libs-snapshot-local): Transfer failed for http://artifactorycompose:8084/artifactory/libs-snapshot-local/pl/pandait/panda/0.0.2-SNAPSHOT/maven-metadata.xml
+    at org.apache.maven.artifact.deployer.DefaultArtifactDeployer.deploy (DefaultArtifactDeployer.java:146)
+    at org.apache.maven.plugin.deploy.AbstractDeployMojo.deploy (AbstractDeployMojo.java:171)
+    at org.apache.maven.plugin.deploy.DeployMojo.deployProject (DeployMojo.java:250)
+    at org.apache.maven.plugin.deploy.DeployMojo.execute (DeployMojo.java:169)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:957)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:289)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:193)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:566)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: org.eclipse.aether.deployment.DeploymentException: Failed to retrieve remote metadata pl.pandait:panda:0.0.2-SNAPSHOT/maven-metadata.xml: Could not transfer metadata pl.pandait:panda:0.0.2-SNAPSHOT/maven-metadata.xml from/to artifactory (http://artifactorycompose:8084/artifactory/libs-snapshot-local): Transfer failed for http://artifactorycompose:8084/artifactory/libs-snapshot-local/pl/pandait/panda/0.0.2-SNAPSHOT/maven-metadata.xml
+    at org.eclipse.aether.internal.impl.DefaultDeployer.upload (DefaultDeployer.java:426)
+    at org.eclipse.aether.internal.impl.DefaultDeployer.deploy (DefaultDeployer.java:256)
+    at org.eclipse.aether.internal.impl.DefaultDeployer.deploy (DefaultDeployer.java:213)
+    at org.eclipse.aether.internal.impl.DefaultRepositorySystem.deploy (DefaultRepositorySystem.java:386)
+    at org.apache.maven.artifact.deployer.DefaultArtifactDeployer.deploy (DefaultArtifactDeployer.java:142)
+    at org.apache.maven.plugin.deploy.AbstractDeployMojo.deploy (AbstractDeployMojo.java:171)
+    at org.apache.maven.plugin.deploy.DeployMojo.deployProject (DeployMojo.java:250)
+    at org.apache.maven.plugin.deploy.DeployMojo.execute (DeployMojo.java:169)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:957)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:289)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:193)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:566)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: org.eclipse.aether.transfer.MetadataTransferException: Could not transfer metadata pl.pandait:panda:0.0.2-SNAPSHOT/maven-metadata.xml from/to artifactory (http://artifactorycompose:8084/artifactory/libs-snapshot-local): Transfer failed for http://artifactorycompose:8084/artifactory/libs-snapshot-local/pl/pandait/panda/0.0.2-SNAPSHOT/maven-metadata.xml
+    at org.eclipse.aether.connector.basic.MetadataTransportListener.transferFailed (MetadataTransportListener.java:52)
+    at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run (BasicRepositoryConnector.java:369)
+    at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run (RunnableErrorForwarder.java:75)
+    at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute (BasicRepositoryConnector.java:644)
+    at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get (BasicRepositoryConnector.java:235)
+    at org.eclipse.aether.internal.impl.DefaultDeployer.upload (DefaultDeployer.java:399)
+    at org.eclipse.aether.internal.impl.DefaultDeployer.deploy (DefaultDeployer.java:256)
+    at org.eclipse.aether.internal.impl.DefaultDeployer.deploy (DefaultDeployer.java:213)
+    at org.eclipse.aether.internal.impl.DefaultRepositorySystem.deploy (DefaultRepositorySystem.java:386)
+    at org.apache.maven.artifact.deployer.DefaultArtifactDeployer.deploy (DefaultArtifactDeployer.java:142)
+    at org.apache.maven.plugin.deploy.AbstractDeployMojo.deploy (AbstractDeployMojo.java:171)
+    at org.apache.maven.plugin.deploy.DeployMojo.deployProject (DeployMojo.java:250)
+    at org.apache.maven.plugin.deploy.DeployMojo.execute (DeployMojo.java:169)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:957)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:289)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:193)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:566)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: org.apache.maven.wagon.TransferFailedException: Transfer failed for http://artifactorycompose:8084/artifactory/libs-snapshot-local/pl/pandait/panda/0.0.2-SNAPSHOT/maven-metadata.xml
+    at org.apache.maven.wagon.providers.http.wagon.shared.AbstractHttpClientWagon.fillInputData (AbstractHttpClientWagon.java:1242)
+    at org.apache.maven.wagon.providers.http.wagon.shared.AbstractHttpClientWagon.fillInputData (AbstractHttpClientWagon.java:1138)
+    at org.apache.maven.wagon.StreamWagon.getInputStream (StreamWagon.java:126)
+    at org.apache.maven.wagon.StreamWagon.getIfNewer (StreamWagon.java:88)
+    at org.apache.maven.wagon.StreamWagon.get (StreamWagon.java:61)
+    at org.eclipse.aether.transport.wagon.WagonTransporter$GetTaskRunner.run (WagonTransporter.java:567)
+    at org.eclipse.aether.transport.wagon.WagonTransporter.execute (WagonTransporter.java:435)
+    at org.eclipse.aether.transport.wagon.WagonTransporter.get (WagonTransporter.java:412)
+    at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask (BasicRepositoryConnector.java:457)
+    at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run (BasicRepositoryConnector.java:364)
+    at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run (RunnableErrorForwarder.java:75)
+    at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute (BasicRepositoryConnector.java:644)
+    at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get (BasicRepositoryConnector.java:235)
+    at org.eclipse.aether.internal.impl.DefaultDeployer.upload (DefaultDeployer.java:399)
+    at org.eclipse.aether.internal.impl.DefaultDeployer.deploy (DefaultDeployer.java:256)
+    at org.eclipse.aether.internal.impl.DefaultDeployer.deploy (DefaultDeployer.java:213)
+    at org.eclipse.aether.internal.impl.DefaultRepositorySystem.deploy (DefaultRepositorySystem.java:386)
+    at org.apache.maven.artifact.deployer.DefaultArtifactDeployer.deploy (DefaultArtifactDeployer.java:142)
+    at org.apache.maven.plugin.deploy.AbstractDeployMojo.deploy (AbstractDeployMojo.java:171)
+    at org.apache.maven.plugin.deploy.DeployMojo.deployProject (DeployMojo.java:250)
+    at org.apache.maven.plugin.deploy.DeployMojo.execute (DeployMojo.java:169)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:957)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:289)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:193)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:566)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: java.net.UnknownHostException: artifactorycompose: Temporary failure in name resolution
+    at java.net.Inet6AddressImpl.lookupAllHostAddr (Native Method)
+    at java.net.InetAddress$PlatformNameService.lookupAllHostAddr (InetAddress.java:929)
+    at java.net.InetAddress.getAddressesFromNameService (InetAddress.java:1515)
+    at java.net.InetAddress$NameServiceAddresses.get (InetAddress.java:848)
+    at java.net.InetAddress.getAllByName0 (InetAddress.java:1505)
+    at java.net.InetAddress.getAllByName (InetAddress.java:1364)
+    at java.net.InetAddress.getAllByName (InetAddress.java:1298)
+    at org.apache.maven.wagon.providers.http.httpclient.impl.conn.SystemDefaultDnsResolver.resolve (SystemDefaultDnsResolver.java:45)
+    at org.apache.maven.wagon.providers.http.httpclient.impl.conn.DefaultHttpClientConnectionOperator.connect (DefaultHttpClientConnectionOperator.java:112)
+    at org.apache.maven.wagon.providers.http.httpclient.impl.conn.PoolingHttpClientConnectionManager.connect (PoolingHttpClientConnectionManager.java:374)
+    at org.apache.maven.wagon.providers.http.httpclient.impl.execchain.MainClientExec.establishRoute (MainClientExec.java:393)
+    at org.apache.maven.wagon.providers.http.httpclient.impl.execchain.MainClientExec.execute (MainClientExec.java:236)
+    at org.apache.maven.wagon.providers.http.httpclient.impl.execchain.ProtocolExec.execute (ProtocolExec.java:186)
+    at org.apache.maven.wagon.providers.http.httpclient.impl.execchain.RetryExec.execute (RetryExec.java:89)
+    at org.apache.maven.wagon.providers.http.httpclient.impl.execchain.RedirectExec.execute (RedirectExec.java:110)
+    at org.apache.maven.wagon.providers.http.httpclient.impl.client.InternalHttpClient.doExecute (InternalHttpClient.java:185)
+    at org.apache.maven.wagon.providers.http.httpclient.impl.client.CloseableHttpClient.execute (CloseableHttpClient.java:83)
+    at org.apache.maven.wagon.providers.http.wagon.shared.AbstractHttpClientWagon.execute (AbstractHttpClientWagon.java:1002)
+    at org.apache.maven.wagon.providers.http.wagon.shared.AbstractHttpClientWagon.fillInputData (AbstractHttpClientWagon.java:1160)
+    at org.apache.maven.wagon.providers.http.wagon.shared.AbstractHttpClientWagon.fillInputData (AbstractHttpClientWagon.java:1138)
+    at org.apache.maven.wagon.StreamWagon.getInputStream (StreamWagon.java:126)
+    at org.apache.maven.wagon.StreamWagon.getIfNewer (StreamWagon.java:88)
+    at org.apache.maven.wagon.StreamWagon.get (StreamWagon.java:61)
+    at org.eclipse.aether.transport.wagon.WagonTransporter$GetTaskRunner.run (WagonTransporter.java:567)
+    at org.eclipse.aether.transport.wagon.WagonTransporter.execute (WagonTransporter.java:435)
+    at org.eclipse.aether.transport.wagon.WagonTransporter.get (WagonTransporter.java:412)
+    at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask (BasicRepositoryConnector.java:457)
+    at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run (BasicRepositoryConnector.java:364)
+    at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run (RunnableErrorForwarder.java:75)
+    at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute (BasicRepositoryConnector.java:644)
+    at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get (BasicRepositoryConnector.java:235)
+    at org.eclipse.aether.internal.impl.DefaultDeployer.upload (DefaultDeployer.java:399)
+    at org.eclipse.aether.internal.impl.DefaultDeployer.deploy (DefaultDeployer.java:256)
+    at org.eclipse.aether.internal.impl.DefaultDeployer.deploy (DefaultDeployer.java:213)
+    at org.eclipse.aether.internal.impl.DefaultRepositorySystem.deploy (DefaultRepositorySystem.java:386)
+    at org.apache.maven.artifact.deployer.DefaultArtifactDeployer.deploy (DefaultArtifactDeployer.java:142)
+    at org.apache.maven.plugin.deploy.AbstractDeployMojo.deploy (AbstractDeployMojo.java:171)
+    at org.apache.maven.plugin.deploy.DeployMojo.deployProject (DeployMojo.java:250)
+    at org.apache.maven.plugin.deploy.DeployMojo.execute (DeployMojo.java:169)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:957)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:289)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:193)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:566)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[8mha:////4Io0+4uAIQQByj24OPM8laVshxJtU4jaaxfM4THQ4y+kAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSoghR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMHmfoKzrT+3fvae3VL4AAAA=[0m[Pipeline] }
+Deleting 1 temporary files
+[8mha:////4NJv991TBRKM9gU1W6NImzj6jA1E4/Ld62DIxP9LiGitAAAAph+LCAAAAAAAAP9tjbEOgjAURR8QB1dHP6LgYmIMk2vD4hfUUmuheQ/bhzD5Rf6a/2AjiZN3uucs5/WGVQxQU7CiM9g7jNqJwY82PTFR6K+eJtHRRWjCSN6IxkwNtea0YENsYFmWQyFhbVB7ig4tw0Z26qFKr9CWZw7JHSXkrr3DEzKZyqwCf2EOsL2NbST8df4GYB4GhmJXVQz5Yf8BpqkVfb8AAAA=[0m[Pipeline] // configFileProvider
+Post stage
+[8mha:////4AvECqnlpncZrt8UUv/bUrUAHr+DQ6c6LwoYKmxPxEu2AAAAph+LCAAAAAAAAP9tjTESgjAQRRcYC1tLDxGksHAcKtsMjSeIJMZAZheTRag8kVfzDmZkxspf/fea93rDKgaoKVjRGewdxtaJwY82PTFR6K+eJtHRRbSEkbwRjZka0ua0YENsYFmWQyFhbbD1FB1aho3s1EOVXqEtzxySO0rInb7DEzKZyqwCf2EOsL2NOhL+On8DMA8M+WHPUFS7avgArI2azL8AAAA=[0m[Pipeline] sh
++ docker stop pandaapp
+pandaapp
+[8mha:////4Ft4IC+b+zni9s6MEkwoC4dme5zFRd3fAqFBZ8viuEWIAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQDSBQooqK10vACExvjxLoL9oWk4kV8jT9gEYmKrXammdcbFjHAkYIVrcHOYWyc6P1g0xMjhe7qaRQtXURDGMkbUZuxJm1OM9bEBuZlORQSlgYbT9GhZVjJVj1U6RXa8swhuUpC7vQdnpDJVGYV+AtTgPVt0JHw1/kbgKlnyA97hmK72fUfb963578AAAA=[0m[Pipeline] deleteDir
+[8mha:////4EktaQWGcDbJ8LsQ3JWyo+BF3e/V3QD7x5W7Ca9FV3GSAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQDQhQooqK10vACExvjxLoL9oWk4kV8jT9gEYmKrXammdcbFjHAkYIVrcHOYWyc6P1g0xMjhe7qaRQtXURDGMkbUZuxJm1OM9bEBuZlORQSlgYbT9GhZVjJVj1U6RXa8swhuUpC7vQdnpDJVGYV+AtTgPVt0JHw1/kbgKnvGYrtZseQH/YfsoqIYr8AAAA=[0m[Pipeline] }
+[8mha:////4Nk+a6eVZe/PpHTb7frN3ZR7mZAvWC0WNgwx1lE6SDCdAAAAph+LCAAAAAAAAP9tjbEOgjAURR8lDq6OfkTRhMUYJteGxS+opdZC8x62D2Hyi/w1/0EiiZN3uucs5/WGVYpQUXSytdh5TMbLPgxufnKk2F0DjbKlizSEiYKVtR1rauxpwZrYwrJMQK5gbdEESh4dw0a1+qGLoNEVZ46zOyoQvrnDEzI1l1lH/sIUYXsbmkT46/wNwNT3DPl+VzKIQ/kBnIqKCL8AAAA=[0m[Pipeline] // withEnv
+[8mha:////4ONGMkPxudOvfq/SwithcATvxFFBN7qkEf9ynZVKotWsAAAAph+LCAAAAAAAAP9tjTESgjAQRRcYC1tLDxGksHAcKtsMjSeIJMZAZheTRag8kVfzDmZkxspf/fea93rDKgaoKVjRGewdxtaJwY82PTFR6K+eJtHRRbSEkbwRjZka0ua0YENsYFmWQyFhbbD1FB1aho3s1EOVXqEtzxySO0rInb7DEzKZyqwCf2EOsL2NOhL+On8DMA8DQ1Ht9gz5ofoAtq28s78AAAA=[0m[Pipeline] }
+[8mha:////4PqKp+OozIBnzJPyjDV68GftXvhflWcuULzcL/ZUR0GuAAAAph+LCAAAAAAAAP9tjbEOgjAURR8QB1dHP6LgYmIMk2vD4hfUUmuheQ/bhzD5Rf6a/2AjiZN3uucs5/WGVQxQU7CiM9g7jNqJwY82PTFR6K+eJtHRRWjCSN6IxkwNtea0YENsYFmWQyFhbVB7ig4tw0Z26qFKr9CWZw7JHSXkrr3DEzKZyqwCf2EOsL2NbST8df4GYB4GhmJX7RnyQ/UBju8vQr8AAAA=[0m[Pipeline] // stage
+[8mha:////4MS860HdLG+1Sl9J8ZTmIjoxlSlI0MDdaOrzbybgAHitAAAAph+LCAAAAAAAAP9tjT0SgjAQRhcYC1tLDxH8KSwYK9sMjSeIJMZAZheTRag8kVfzDmZkxsqv+t5r3usNixjgSMGK1mDnMDZO9H6w6YmRQnf1NIqWLqIhjOSNqM1YkzanGWtiA/OyHAoJS4ONp+jQMqxkqx6q9ApteeaQXCUhd/oOT8hkKrMK/IUpwPo26Ej46/wNwNT3DMV2c2DId/sPWrSO878AAAA=[0m[Pipeline] }
+[8mha:////4KLY4F4+OhgvId1Z2O8zMlPeiCMjJHkq9Q/jxQDlS5IYAAAApR+LCAAAAAAAAP9tjTESgjAQRZcwFraWHiIolTMOlW2GxhPEEGMgs4vJIlSeyKt5BxmZsfJX/73mvd6wShEqik62FjuPyXjZh8HNT44Uu2ugUbZ0kYYwUbCytmNNjT0tWBNbWJYJyBWsLZpAyaNj2KhWP3QRNLrizHF2RwXCN3d4QqbmMuvIX5gibG9Dkwh/nb8BmPqeId/vDgyiLD8ZNt91vwAAAA==[0m[Pipeline] // withEnv
+[8mha:////4AxZLMxKwhbrZZ7OgGPSBQpr0nsd7YceGE4j5xnddSwyAAAAph+LCAAAAAAAAP9tjTESgjAQRRcYC1tLDxGksHAcKtsMjSeIJMZAZheTRag8kVfzDmZkxspf/fea93rDKgaoKVjRGewdxtaJwY82PTFR6K+eJtHRRbSEkbwRjZka0ua0YENsYFmWQyFhbbD1FB1aho3s1EOVXqEtzxySO0rInb7DEzKZyqwCf2EOsL2NOhL+On8DMA8DQ1HtDgx5tf8A3CPKC78AAAA=[0m[Pipeline] }
+[8mha:////4G+mJA1X0LbV7rPGmiahBO+tFDYG3+75JFm90VmeVe9hAAAApR+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYRDJDpERWul4QUmNsaJdWfsC07Fi/gafyAiEhVb7UwzrzesUoQjRSt6g4PD1DkR/GjnJzLF4eopi54uoiNM5I1oTW5Jm9OCLbGBZUUJlYS1wc5TcmgZNrJXD1V7hbY+c5zdQULp9B2eUMi5zCryF6YI29uoE+Gv8zcAUwgMVdPsGMpm/wE2SbX9vwAAAA==[0m[Pipeline] // withEnv
+[8mha:////4LdCH7a7vYoXfeuIL1hN6lLXXsMvf8bd/0vGmbNUc/QlAAAAox+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQj14iK1nLDC0xsjBPrLtgXkooX8TX+gEUkKrbamWZeb9jkBEdKXvQOh4C5C2KMky9PzJSGa6RZ9HQRHWGm6IR2sybrTitqYgfrqhoaBVuHXaQc0DPsVG8epo0GfXvmVNxBQR3sHZ5QqVJmk/gLS4L9bbKZ8Nf5G4BlHBkaKSVDLeUHHG6DRr8AAAA=[0m[Pipeline] }
+[8mha:////4DutBceCbwp7HC14qX1ACcLlVIl/k1t0TjbV6XgDSCdhAAAApB+LCAAAAAAAAP9tjTESgjAQRRcYC1tLDxHE1rGyzdB4gkhiDGR2Y7IYKk/k1byDjMxY+av/XvNeb1ilCEeKVvQGB4epcyL40c5PZIrD1VMWPV1ER5jIG9Ga3JI2pwVbYgPLihIqCWuDnafk0DJsZK8eqvYKbX3mOLuDhNLpOzyhkHOZVeQvTBG2t1Enwl/nbwCmEBiqptkzlM3uAyQsELe/AAAA[0m[Pipeline] // withEnv
+[8mha:////4JiCJZO9coWmZuMJ1psHmY0FqF8+8iAuXy3GoWz2TYEdAAAApB+LCAAAAAAAAP9tjTEOwjAQBM+JKGgpeYSjCDpERWul4QUmNsaJdRfsC07Fi/gafyAiEhVb7UwzrzesUoQjRSc7i73H1Ho5hNHNT2aK/TVQlh1dZEuYKFjZ2NyQsacFG2ILy0QBpYK1xTZQ8ugYNqrTD10Fja46c5zdQUHhzR2eINRcZh35C1OE7W00ifDX+RuAaRgYyrreMYj9B5ThPcS+AAAA[0m[Pipeline] }
+[8mha:////4Ej4DME/qJT4F9xtkC2B9DG9FilV6NvS2SglyiphvGCoAAAApB+LCAAAAAAAAP9tjTEOwjAQBM+JKGgpeYSjCDpERWul4QUmNsaJdRfsC07Fi/gafyAiEhVb7UwzrzesUoQjRSc7i73H1Ho5hNHNT2aK/TVQlh1dZEuYKFjZ2NyQsacFG2ILy0QBpYK1xTZQ8ugYNqrTD10Fja46c5zdQUHhzR2eINRcZh35C1OE7W00ifDX+RuAaRgYyrreM4jdByeoeei+AAAA[0m[Pipeline] // node
+[8mha:////4FTJFnk3Awl9Q1kbnkYiTVa5x7kL3ysIb3vgo69HqTavAAAApB+LCAAAAAAAAP9tjTEOwjAQBM+JKGgpeYSjIFEhKlorDS8wsTFOrLtgX3AqXsTX+AMRkajYameaeb1hlSIcKTrZWew9ptbLIYxufjJT7K+BsuzoIlvCRMHKxuaGjD0t2BBbWCYKKBWsLbaBkkfHsFGdfugqaHTVmePsDgoKb+7wBKHmMuvIX5gibG+jSYS/zt8ATMPAUNb1nkHsPgGxHqK+AAAA[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE

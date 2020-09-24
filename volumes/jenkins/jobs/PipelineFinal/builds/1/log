@@ -1,0 +1,30 @@
+Started by user [8mha:////4KAZa2T8wm7stt23rJ1FHk3fd3Aj1c/9xBMUpF//fwRJAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZu/dLi1CL9gsS8lEQA9JRhvsAAAAA=[0mpanda@panda.pl
+Running in Durability level: MAX_SURVIVABILITY
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+WorkflowScript: 2: Undefined section "label" @ line 2, column 5.
+       label 'Slave'
+       ^
+
+WorkflowScript: 1: Missing required section "agent" @ line 1, column 1.
+   pipeline {
+   ^
+
+2 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:310)
+	at org.codehaus.groovy.control.CompilationUnit.applyToPrimaryClassNodes(CompilationUnit.java:1085)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:603)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:581)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:558)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:298)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:268)
+	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:688)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:700)
+	at org.jenkinsci.plugins.workflow.cps.CpsGroovyShell.doParse(CpsGroovyShell.java:142)
+	at org.jenkinsci.plugins.workflow.cps.CpsGroovyShell.reparse(CpsGroovyShell.java:127)
+	at org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.parseScript(CpsFlowExecution.java:561)
+	at org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.start(CpsFlowExecution.java:522)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:337)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:428)
+Finished: FAILURE

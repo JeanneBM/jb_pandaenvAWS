@@ -1,0 +1,50 @@
+# This template is used to create routing rule for Traefik - to forward requests to the router's own API from
+# internal/external entry points to the backend servers (gRPC / REST)
+
+[frontends]
+
+  [frontends.router-grpc]
+    entryPoints = ["internal"]
+    backend = "router-grpc"
+
+    [frontends.router-grpc.routes.match]
+      rule = "PathPrefix: /com.jfrog.router."
+
+  [frontends.router-rest-internal]
+    entryPoints = ["internal"]
+    backend = "router-rest"
+
+    [frontends.router-rest-internal.routes.match]
+      rule = "PathPrefix: /router/"
+
+  [frontends.router-rest-internal-traefik]
+    entryPoints = ["internal"]
+    backend = "router-rest"
+
+    [frontends.router-rest-internal-traefik.routes.match]
+      rule = "Path: /router/api/v1/traefik/{endpoint:health|api},/router/api/v1/traefik/api/{endpoint:.*}"
+
+    [frontends.router-rest-internal-traefik.routes.replace]
+      rule = "ReplacePathRegex: ^/router/api/v1/traefik/(health|api(/.*)?)$ /$1"
+
+  [frontends.router-rest-external]
+    entryPoints = ["external"]
+    backend = "router-rest"
+    
+    priority = 9999
+
+    [frontends.router-rest-external.routes.match]
+      # no support for regex lookahead, so using positive matching instead of exclusions
+      rule = "Path: /router/api/v1/system/{path:(ping|health)}"
+
+[backends]
+
+  [backends.router-grpc]
+    [backends.router-grpc.servers.server1]
+      url = "h2c://localhost:8047"
+
+  [backends.router-rest]
+    [backends.router-rest.servers.server1]
+      url = "http://localhost:8049"
+
+  [backends.blackhole]

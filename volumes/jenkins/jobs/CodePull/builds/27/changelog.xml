@@ -1,0 +1,9 @@
+commit 2f52faf2753e9d3d4dd27ebac85a3d76f094a8fe
+tree 8b059a439428b3be67282ffeb74fc90f925b2c5d
+parent 393e5f2b02101897d87d96268aac3eefab2b892e
+author JoannaDemo <69588787+JoannaDemo@users.noreply.github.com> 2020-09-14 01:54:48 +0200
+committer GitHub <noreply@github.com> 2020-09-14 01:54:48 +0200
+
+    Update PandaApplicationSeleniumTest.java
+
+:100644 100644 120f4182e10e7285304462a5609bb009c9e29f35 7f5c10a639611523ef0c9590e28436aa5527266f M	src/test/java/pl/pandait/panda/PandaApplicationSeleniumTest.java

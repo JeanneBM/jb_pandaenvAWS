@@ -1,0 +1,9 @@
+commit 75b66bc6796625fe8977b1ba3b0b57c62c02d01d
+tree b8109b7e117da112ee32b3cf16dabc5a49cb4c49
+parent 848be84a8d2c06b3a54a1444d70976e39350dec9
+author JoannaDemo <69588787+JoannaDemo@users.noreply.github.com> 2020-09-16 16:05:36 +0200
+committer GitHub <noreply@github.com> 2020-09-16 16:05:36 +0200
+
+    Update application.properties
+
+:100644 100644 4d360de145ec4672c398bbd6f992199a4f5efca4 8b137891791fe96927ad78e64b0aad7bded08bdc M	src/main/resources/application.properties

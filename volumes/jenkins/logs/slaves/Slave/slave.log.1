@@ -1,0 +1,14 @@
+Inbound agent connected from 192.168.44.44/192.168.44.44:51234
+Remoting version: 4.5
+This is a Unix agent
+Agent successfully connected and online
+ERROR: Connection terminated
+java.nio.channels.ClosedChannelException
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.NIONetworkLayer.ready(NIONetworkLayer.java:142)
+	at org.jenkinsci.remoting.protocol.IOHub$OnReady.run(IOHub.java:795)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)

@@ -1,0 +1,7 @@
+Started by user [8mha:////4KAZa2T8wm7stt23rJ1FHk3fd3Aj1c/9xBMUpF//fwRJAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZu/dLi1CL9gsS8lEQA9JRhvsAAAAA=[0mpanda@panda.pl
+Running as SYSTEM
+Building on master in workspace /var/jenkins_home/workspace/PandaJob1
+[PandaJob1] $ /bin/sh -xe /tmp/jenkins15438790381447439366.sh
++ echo „hello world”
+„hello world”
+Finished: SUCCESS

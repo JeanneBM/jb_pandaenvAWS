@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- // @formatter:off -->
+<configuration debug="false">
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator"/>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <layout class="org.jfrog.common.logging.logback.layout.BackTracePatternLayout">
+                <pattern>%d{yyyy-MM-dd'T'HH:mm:ss.SSS, UTC}Z %boldYellow([jfac ]) %highlight([%-5p]) [%-16X{uber-trace-id}] [%-30.30(%c{3}:%L)] [%-20.20thread] - %m%n</pattern>
+            </layout>
+        </encoder>
+    </appender>
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${log.dir}/access-service.log</File>
+        <rollingPolicy class="org.jfrog.common.logging.logback.rolling.FixedWindowWithDateRollingPolicy">
+            <FileNamePattern>${log.dir.archived}/access-service.%i.log.gz</FileNamePattern>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>25MB</MaxFileSize>
+        </triggeringPolicy>
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <layout class="org.jfrog.common.logging.logback.layout.BackTracePatternLayout">
+                <pattern>%d{yyyy-MM-dd'T'HH:mm:ss.SSS, UTC}Z [jfac ] [%-5p] [%-16X{uber-trace-id}] [%-30.30(%c{3}:%L)] [%-20.20thread] - %m%n</pattern>
+            </layout>
+        </encoder>
+    </appender>
+    <appender name="REQUEST" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${log.dir}/access-request.log</File>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd'T'HH:mm:ss.SSS, UTC}Z|%X{uber-trace-id}|%X{req.remoteAddress}|%X{req.username}|%X{req.method}|%X{req.path}|%X{req.status}|%X{res.contentLength}|%X{req.contentLength}|%X{req.duration}|%X{req.userAgent}%n</pattern>
+        </encoder>
+        <rollingPolicy class="org.jfrog.common.logging.logback.rolling.FixedWindowWithDateRollingPolicy">
+            <FileNamePattern>${log.dir.archived}/access-request.%i.log.gz</FileNamePattern>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>25MB</MaxFileSize>
+        </triggeringPolicy>
+    </appender>
+    <appender name="AUDIT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${log.dir}/access-audit.log</File>
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <layout class="org.jfrog.common.logging.logback.layout.BackTracePatternLayout">
+                <pattern>%d %m%n</pattern>
+            </layout>
+        </encoder>
+        <rollingPolicy class="org.jfrog.common.logging.logback.rolling.FixedWindowWithDateRollingPolicy">
+            <FileNamePattern>${log.dir.archived}/access-audit.%i.log.gz</FileNamePattern>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>25MB</MaxFileSize>
+        </triggeringPolicy>
+    </appender>
+    <appender name="SECURITY_AUDIT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${log.dir}/access-security-audit.log</File>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd'T'HH:mm:ss.SSS, UTC}Z|%X{uber-trace-id}|%X{audit.performingUserIp}|%X{audit.performingUser}|%X{audit.loggedinPrincipal}|%X{audit.entityName}|%X{audit.securityEventType}|%X{audit.securityEvent}|%X{audit.dataChanged}%n</pattern>
+        </encoder>
+        <rollingPolicy class="org.jfrog.common.logging.logback.rolling.FixedWindowWithDateRollingPolicy">
+            <FileNamePattern>${log.dir.archived}/access-security-audit.%i.log.gz</FileNamePattern>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>100MB</MaxFileSize>
+        </triggeringPolicy>
+    </appender>
+
+    <root>
+        <level value="warn"/>
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </root>
+
+    <logger name="org.jfrog" level="info"/>
+
+    <logger name="org.jfrog.access.server.audit.RequestLogger" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="REQUEST"/>
+    </logger>
+    <logger name="org.jfrog.access.server.audit.TokenAuditor" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="AUDIT"/>
+    </logger>
+    <logger name="org.jfrog.access.server.audit.security.AuditLogger" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="SECURITY_AUDIT"/>
+    </logger>
+
+    <!-- third party loggers -->
+    <logger name="org.glassfish.jersey" level="warn"/>
+    <logger name="org.springframework" level="warn"/>
+</configuration>

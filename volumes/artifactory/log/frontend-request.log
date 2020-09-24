@@ -1,0 +1,9 @@
+2020-09-24T21:30:17.448Z|32dc5adacfc98b31|127.0.0.1|anonymous|GET|/api/v1/ui/auth/screen/footer|200|188|-|246.892|Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:80.0) Gecko/20100101 Firefox/80.0
+2020-09-24T21:30:17.554Z|18360e5b9b03e058|127.0.0.1|anonymous|POST|/api/v1/ui/auth/loginRelatedData|200|45|17|311.603|Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:80.0) Gecko/20100101 Firefox/80.0
+2020-09-24T21:30:17.837Z|3c58c21922f4d274|127.0.0.1|anonymous|GET|/api/v1/ui/auth/current|200|523|-|640.044|Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:80.0) Gecko/20100101 Firefox/80.0
+2020-09-24T21:30:17.895Z|18df9742be000e58|127.0.0.1|anonymous|GET|/api/v1/system/status/nodes|200|479|-|46.882|Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:80.0) Gecko/20100101 Firefox/80.0
+2020-09-24T21:30:18.143Z|7496ac40a4bd068a|127.0.0.1|anonymous|GET|/api/v1/ui/artifactsearch/pkg/availablePackages|401|12|-|240.484|Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:80.0) Gecko/20100101 Firefox/80.0
+2020-09-24T21:30:18.420Z|9c3b9f7f9e3d23c |127.0.0.1|anonymous|POST|/api/v1/ui/auth/loginRelatedData|200|45|17|17.234|Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:80.0) Gecko/20100101 Firefox/80.0
+2020-09-24T21:30:18.439Z|554a68db647cf7f9|127.0.0.1|anonymous|GET|/api/v1/ui/oauth2/loginRequestPlatform|404|74|-|33.378|Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:80.0) Gecko/20100101 Firefox/80.0
+2020-09-24T21:30:18.924Z|571acfcf5f2c6bc7|127.0.0.1|anonymous|GET|/api/v1/ui/treebrowser/repoOrder|401|12|-|1.636|Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:80.0) Gecko/20100101 Firefox/80.0
+2020-09-24T21:30:18.974Z|2f2d738aa6ffbaf6|127.0.0.1|anonymous|GET|/api/v1/ui/auth/current|200|523|-|31.493|Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:80.0) Gecko/20100101 Firefox/80.0

@@ -1,0 +1,9 @@
+commit 802fd46ec0cb7dcb6215f9b03ca27a7fd18819a9
+tree 591a562c6308fc40ea3d31739fa20ccc9ca55d95
+parent 91ec8a9c2dc008151f5b89b7bb7f06a2e60a2d68
+author JeanneBM <55690923+JeanneBM@users.noreply.github.com> 2020-09-24 00:43:00 +0200
+committer GitHub <noreply@github.com> 2020-09-24 00:43:00 +0200
+
+    Update Jenkinsfile
+
+:100644 100644 152186cdc3c4b1f6e73d6548c8bfcd712ad1682c a153285c040bb9122bbc1ca52b027ff0f596e511 M	Jenkinsfile

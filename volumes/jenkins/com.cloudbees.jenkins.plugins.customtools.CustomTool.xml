@@ -1,0 +1,24 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<com.cloudbees.jenkins.plugins.customtools.CustomTool_-DescriptorImpl plugin="custom-tools-plugin@0.7">
+  <installations class="com.cloudbees.jenkins.plugins.customtools.CustomTool-array">
+    <com.cloudbees.jenkins.plugins.customtools.CustomTool>
+      <name>Ansible</name>
+      <home></home>
+      <properties>
+        <hudson.tools.InstallSourceProperty>
+          <installers>
+            <hudson.tools.CommandInstaller>
+              <command>echo &quot;deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main&quot; &gt;&gt; /etc/apt/sources.list
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367
+apt update
+apt install -y ansible</command>
+              <toolHome>/usr/bin/ansible</toolHome>
+            </hudson.tools.CommandInstaller>
+          </installers>
+        </hudson.tools.InstallSourceProperty>
+      </properties>
+      <exportedPaths></exportedPaths>
+      <additionalVariables></additionalVariables>
+    </com.cloudbees.jenkins.plugins.customtools.CustomTool>
+  </installations>
+</com.cloudbees.jenkins.plugins.customtools.CustomTool_-DescriptorImpl>

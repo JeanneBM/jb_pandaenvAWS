@@ -1,0 +1,37 @@
+path.data: ${ARTIFACTORY_HOME}/var/data/filebeat
+filebeat.inputs:
+  - type: log
+    enabled: ${METRICS_LOG_ENABLED:false}
+    paths:
+      - ${ARTIFACTORY_HOME}/var/log/artifactory-metrics_events.log
+    processors:
+      - drop_event:
+          when:
+            not:
+              contains:
+                message: "jfrt_artifacts_gc"
+      - drop_event:
+          when:
+            regexp:
+              message: "^#.*"
+      - dissect:
+          tokenizer: "%{metric_name}{end=\"%{end_time}\",start=\"%{start_time}\",status=\"%{gc_status}\",type=\"%{gc_type}\"} %{metric_value} %{timestamp}"
+          target_prefix: ""
+    fields:
+      service_id: "${ARTIFACTORY_SERVICE_ID}"
+      node_id: "${NODE_ID}"
+      record_type: "jfrt_artifacts_gc"
+    fields_under_root: true
+setup.template.enabled: false
+output.elasticsearch:
+  hosts: ["${ELASTICSEARCH_URL}"]
+  username: "${ELASTICSEARCH_USERNAME}"
+  password: "${ELASTICSEARCH_PASSWORD}"
+  index: "active_metrics_data_%{+yyyy.MM.dd}"
+logging.level: ${FILEBEAT_LOG_LEVEL:debug}
+logging.to_files: ${FILEBEAT_LOG_TOFILES:false}
+logging.files:
+  path: ${FILEBEAT_LOG_PATH:${ARTIFACTORY_HOME}/var/log}
+  name: filebeat.log
+  keepfiles: ${FILEBEAT_LOG_KEEPFILES:2}
+  permissions: 0644

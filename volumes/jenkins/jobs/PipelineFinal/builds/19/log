@@ -1,0 +1,27 @@
+Started by user [8mha:////4KAZa2T8wm7stt23rJ1FHk3fd3Aj1c/9xBMUpF//fwRJAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZu/dLi1CL9gsS8lEQA9JRhvsAAAAA=[0mpanda@panda.pl
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4O6OOdB7RT8Hw/daqC1d7TEYhS8V3xu+CUfubrwL7O6mAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4FzA1ZFp97URRZw76i2oXdkZEvmCMrVJeNeL3TT5CV9QAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4PoVkcEz2h9l6/qIPmn3FQ/qbM9euEKPkAqQ6sgaIY+/AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgYB/eT83ILSktQi/eCcxLJUfQCng2qgxQAAAA==[0mSlave in /home/workspace/PipelineFinal
+[8mha:////4Mldl8TkQs3uc03IDXk6vLSR2j62ir+PwBdCAEynYt9AAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4Dvbia5JhKki8tQBedaWZEzOvzSzB5NKUDuVcxcngfYKAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaGWsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gdpL1fxvAAAAA==[0m[Pipeline] readMavenPom
+[8mha:////4Cs62xSh1J87QaXFLZtY47Xw6VJ59UbA1RSlhdckm8CfAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGBtjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j8OXFZ7vAAAAA==[0m[Pipeline] }
+[8mha:////4KRDwSH3B+eX/oqopKU8+HH2i/DhjUlKkB3rLXC+eIAcAAAAox+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWFgYK1tC4wmQRYQl/7PAult5Iq/mHSRuYuUkk8yb5r3esM4JTpQs9wZ7h1k7HsNo6+ITpf4WaOKerlwTZgqGSzNJ6sx5QUnFwBLWwErAxqAOlB3aAlvh1UO1QaFtLyXV7yigcd0AT2CimotK5Qtzgt197DLhz/NXAHOMBdihdv8BHeBS2LwAAAA=[0m[Pipeline] // node
+[8mha:////4LAIb9q3OTVfFjW+FX6uRgkHAG4A+qz5PpPH+9CTljlnAAAAox+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbWJkYK1tC4wmQRYQl/7PAult5Iq/mHSRuYuUkk8yb5r3esM4JTpQs9wZ7h1k7HsNo6+ITpf4WaOKerlwTZgqGSzNJ6sx5QUnFwBLWwErAxqAOlB3aAlvh1UO1QaFtLyXV7yigcd0AT2CimotK5Qtzgt197DLhz/NXAHOMBdihdv8BWkcFLbwAAAA=[0m[Pipeline] End of Pipeline
+org.codehaus.plexus.util.xml.pull.XmlPullParserException: only whitespace content allowed before start tag and not p (position: START_DOCUMENT seen p... @1:1) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseProlog(MXParser.java:1862)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1698)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1317)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3856)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:609)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:638)
+	at org.jenkinsci.plugins.pipeline.utility.steps.maven.ReadMavenPomStep$Execution.run(ReadMavenPomStep.java:151)
+	at org.jenkinsci.plugins.pipeline.utility.steps.maven.ReadMavenPomStep$Execution.run(ReadMavenPomStep.java:124)
+	at org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Finished: FAILURE

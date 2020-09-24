@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2020-09-01 17:56:36.574 UTC</timestamp>
+  <md5sum>6c5cd8b1529e88d08c8c72ac959150d0</md5sum>
+  <fileName>Credential id=github-creds name=WitoldSlawko/****** (credentials to personal github)</fileName>
+  <usages>
+    <entry>
+      <string>panda academy</string>
+      <ranges>1-5</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

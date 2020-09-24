@@ -1,0 +1,42 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>Branch</name>
+          <description></description>
+          <value>feature/seleniumgrid</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>Branch</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>panda</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>70</queueId>
+  <timestamp>1600117216847</timestamp>
+  <startTime>1600117216864</startTime>
+  <result>FAILURE</result>
+  <duration>10303</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>Slave</builtOn>
+  <workspace>/home/workspace/CodePull</workspace>
+  <hudsonVersion>2.255</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.RegularImmutableSortedSet">
+    <string>noreply</string>
+  </culprits>
+</build>

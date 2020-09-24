@@ -1,0 +1,43 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.5">
+  <node class="org.jenkinsci.plugins.workflow.graph.FlowEndNode" plugin="workflow-api@2.40">
+    <parentIds>
+      <string>7</string>
+    </parentIds>
+    <id>8</id>
+    <startId>2</startId>
+    <result>
+      <name>FAILURE</name>
+      <ordinal>2</ordinal>
+      <color>RED</color>
+      <completeBuild>true</completeBuild>
+    </result>
+  </node>
+  <actions>
+    <wf.a.ErrorAction plugin="workflow-api@2.40">
+      <error class="java.io.IOException">
+        <detailMessage>Command returned status 127</detailMessage>
+        <stackTrace>
+          <trace>hudson.tools.AbstractCommandInstaller.performInstallation(AbstractCommandInstaller.java:80)</trace>
+          <trace>hudson.tools.InstallerTranslator.getToolHome(InstallerTranslator.java:69)</trace>
+          <trace>hudson.tools.ToolLocationNodeProperty.getToolHome(ToolLocationNodeProperty.java:109)</trace>
+          <trace>hudson.tools.ToolInstallation.translateFor(ToolInstallation.java:206)</trace>
+          <trace>com.cloudbees.jenkins.plugins.customtools.CustomTool.forNode(CustomTool.java:163)</trace>
+          <trace>com.cloudbees.jenkins.plugins.customtools.CustomTool.forNode(CustomTool.java:65)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.ToolStep$Execution.run(ToolStep.java:152)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.ToolStep$Execution.run(ToolStep.java:133)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)</trace>
+          <trace>java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)</trace>
+          <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)</trace>
+          <trace>java.base/java.lang.Thread.run(Thread.java:834)</trace>
+        </stackTrace>
+        <suppressedExceptions class="empty-list"/>
+      </error>
+    </wf.a.ErrorAction>
+    <wf.a.TimingAction plugin="workflow-api@2.40">
+      <startTime>1600905109989</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

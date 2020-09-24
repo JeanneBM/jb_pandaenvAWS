@@ -1,0 +1,79 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>Branch</name>
+          <description></description>
+          <value>feature/selenium-final</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>Branch</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>panda</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.git.util.BuildData plugin="git@4.4.1">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/feature/selenium-final</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.4.2">
+              <sha1>08dda571219fb48184cdfd869323d73753bbd4ee</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/feature/selenium-final</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>34</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/JoannaDemo/panda_repository.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@4.4.1">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/feature/selenium-final</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/jenkins_home/workspace/CodePull</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+  </actions>
+  <queueId>41</queueId>
+  <timestamp>1600042674051</timestamp>
+  <startTime>1600042674056</startTime>
+  <result>FAILURE</result>
+  <duration>22546</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/jenkins_home/workspace/CodePull</workspace>
+  <hudsonVersion>2.255</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@4.4.1">
+    <authorOrCommitter>false</authorOrCommitter>
+    <showEntireCommitSummaryInChanges>true</showEntireCommitSummaryInChanges>
+  </scm>
+  <culprits class="com.google.common.collect.RegularImmutableSortedSet">
+    <string>noreply</string>
+  </culprits>
+</build>

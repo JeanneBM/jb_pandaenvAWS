@@ -1,0 +1,8 @@
+16-Sep-2020 00:02:47.106 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+16-Sep-2020 00:02:52.763 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+16-Sep-2020 08:38:53.035 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+16-Sep-2020 08:38:59.320 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+16-Sep-2020 13:17:41.552 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+16-Sep-2020 13:17:46.115 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+16-Sep-2020 13:54:56.165 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+16-Sep-2020 13:55:03.231 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext

@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2020-09-08 19:29:57.191 UTC</timestamp>
+  <md5sum>d4822024c5dfb8856716af0d65a2c58f</md5sum>
+  <fileName>Credential id=artifactory name=admin/****** (artifactory)</fileName>
+  <usages>
+    <entry>
+      <string>panda academy</string>
+      <ranges>9-11,17-21</ranges>
+    </entry>
+    <entry>
+      <string>CodePull</string>
+      <ranges>3-47</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

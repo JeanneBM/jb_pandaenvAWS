@@ -1,0 +1,116 @@
+Started by user [8mha:////4KAZa2T8wm7stt23rJ1FHk3fd3Aj1c/9xBMUpF//fwRJAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZu/dLi1CL9gsS8lEQA9JRhvsAAAAA=[0mpanda@panda.pl
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4O6OOdB7RT8Hw/daqC1d7TEYhS8V3xu+CUfubrwL7O6mAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4FzA1ZFp97URRZw76i2oXdkZEvmCMrVJeNeL3TT5CV9QAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4PoVkcEz2h9l6/qIPmn3FQ/qbM9euEKPkAqQ6sgaIY+/AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgYB/eT83ILSktQi/eCcxLJUfQCng2qgxQAAAA==[0mSlave in /home/workspace/TestAnsibleTerraform
+[8mha:////4Mldl8TkQs3uc03IDXk6vLSR2j62ir+PwBdCAEynYt9AAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4Dvbia5JhKki8tQBedaWZEzOvzSzB5NKUDuVcxcngfYKAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaGWsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gdpL1fxvAAAAA==[0m[Pipeline] tool
+[Ansible] $ sh -e /home/tools/com.cloudbees.jenkins.plugins.customtools.CustomTool/Ansible/hudson17220028029973297247.sh
+Warning: apt-key output should not be parsed (stdout is not a terminal)
+Executing: /tmp/apt-key-gpghome.sHrrMWBRMy/gpg.1.sh --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367
+gpg: key 93C4A3FD7BB9C367: "Launchpad PPA for Ansible, Inc." not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://ppa.launchpad.net/ansible/ansible/ubuntu trusty InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
+Get:3 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Get:4 https://download.docker.com/linux/ubuntu bionic InRelease [64.4 kB]
+Get:5 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+Ign:6 https://pkg.jenkins.io/debian binary/ InRelease
+Get:7 https://pkg.jenkins.io/debian binary/ Release [2,044 B]
+Get:8 https://pkg.jenkins.io/debian binary/ Release.gpg [833 B]
+Get:9 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Get:10 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages [13.0 kB]
+Get:11 http://security.ubuntu.com/ubuntu bionic-security/main i386 Packages [544 kB]
+Get:12 http://archive.ubuntu.com/ubuntu bionic-updates/main i386 Packages [747 kB]
+Ign:13 http://pkg.jenkins-ci.org/debian-stable binary/ InRelease
+Get:14 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [867 kB]
+Get:15 http://pkg.jenkins-ci.org/debian-stable binary/ Release [2,044 B]
+Get:16 https://pkg.jenkins.io/debian binary/ Packages [31.0 kB]
+Get:17 http://pkg.jenkins-ci.org/debian-stable binary/ Release.gpg [833 B]
+Get:18 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [1,087 kB]
+Get:19 http://pkg.jenkins-ci.org/debian-stable binary/ Packages [18.4 kB]
+Get:20 http://security.ubuntu.com/ubuntu bionic-security/main Translation-en [268 kB]
+Get:21 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [95.5 kB]
+Get:22 http://security.ubuntu.com/ubuntu bionic-security/restricted Translation-en [20.4 kB]
+Get:23 http://security.ubuntu.com/ubuntu bionic-security/universe i386 Packages [641 kB]
+Get:24 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [706 kB]
+Get:25 http://archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [360 kB]
+Get:26 http://archive.ubuntu.com/ubuntu bionic-updates/restricted i386 Packages [12.0 kB]
+Get:27 http://archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [107 kB]
+Get:28 http://security.ubuntu.com/ubuntu bionic-security/universe Translation-en [235 kB]
+Get:29 http://archive.ubuntu.com/ubuntu bionic-updates/restricted Translation-en [23.0 kB]
+Get:30 http://archive.ubuntu.com/ubuntu bionic-updates/universe i386 Packages [1,034 kB]
+Get:31 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [8,512 B]
+Get:32 http://security.ubuntu.com/ubuntu bionic-security/multiverse Translation-en [2,908 B]
+Get:33 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1,114 kB]
+Get:34 http://archive.ubuntu.com/ubuntu bionic-updates/universe Translation-en [348 kB]
+Get:35 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse i386 Packages [9,432 B]
+Get:36 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [21.7 kB]
+Get:37 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse Translation-en [6,920 B]
+Fetched 8,645 kB in 5s (1,721 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+101 packages can be upgraded. Run 'apt list --upgradable' to see them.
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:61 and /etc/apt/sources.list:62
+W: Target Packages (main/binary-i386/Packages) is configured multiple times in /etc/apt/sources.list:61 and /etc/apt/sources.list:62
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:61 and /etc/apt/sources.list:62
+W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:61 and /etc/apt/sources.list:62
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:61 and /etc/apt/sources.list:62
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:61 and /etc/apt/sources.list:62
+W: Target Packages (main/binary-i386/Packages) is configured multiple times in /etc/apt/sources.list:61 and /etc/apt/sources.list:62
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:61 and /etc/apt/sources.list:62
+W: Target Translations (main/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:61 and /etc/apt/sources.list:62
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:61 and /etc/apt/sources.list:62
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ansible is already the newest version (2.9.13-1ppa~trusty).
+0 upgraded, 0 newly installed, 0 to remove and 101 not upgraded.
+[8mha:////4G/zDSSiTFScUv/MdFVhM4m2yGFESXaIpCeFq+esB3dbAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0QSyIiTXKwglCEkLa6P82SWknTsTVuAOBSkxYsmRbst7zBXWKcKToeGux85i0530YXUl8othdA028pQvXhImC5dJOkow9LVVStrCIVbASsLaoAyWPLsNGtOqumqDQNeccy3YQUHkzwAOYKOSsYv6WOcL2NppE+OP8BcDcZ2C74v3nV78BmoXK/sAAAAA=[0m[Pipeline] withEnv
+[8mha:////4Kioq8pNNIxg7tfF5fHWo1q+FK/kXmTbIlVVH0OCH5iNAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] {
+[8mha:////4LrorphbMZrC9nw2GbzHW6/l+c51LJwpYhgFZYDV/ly3AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] stage
+[8mha:////4KHdMZZpoHSRzrIqpjmIQhSOMDSwbE3xd5xNc/eMGAJDAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] { (Declarative: Tool Install)
+[8mha:////4JLcWLMxC+QtrMF8mJdgkLvx5lnIko3hzSTGAXbcc/9FAAAAoh+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKBEiEqWisNLzCJMU6su2BfSCpexNf4AxGRqNhqZ5p5vbFMEUeOTjWWWk+p8qoLvZueGji218CDaviiKqbEwarSDiXX9jRjyWIxL8ux0FhZqgInT06w1o15mCIYcsVZ4uQOGrmv73gi01NZTJQvjBGbW18npl/nbwBjJ8j2gny37T6VOYoyvQAAAA==[0m[Pipeline] tool
+Unpacking https://releases.hashicorp.com/terraform/0.14.0-alpha20200910/terraform_0.14.0-alpha20200910_darwin_amd64.zip to /home/tools/org.jenkinsci.plugins.terraform.TerraformInstallation/Terraform on Slave
+[8mha:////4CzFm1Lq1V7aBKCWJba9YNqDRzhXLQrlpyegPG4kE8ZHAAAAoh+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6KE0Rgn14bFL6hQa6F5D9uHMPlF/pr/IJHEyTvdc5bzemOdIo4cnWotdZ5S7VUfBjc/NXLsroFH1fJF1UyJg1WVHStu7GnBisViWZZjpbGxVAdOnpxgq1vzMEUw5IqzxNkdNHLf3PFEpueymChfmCJ2t6FJTL/O3wCmXpDtBXlZ9h/UCJErvQAAAA==[0m[Pipeline] envVarsForTool
+[8mha:////4EfO0/Zv58TdS3gnYNTp1HHUnFOfmw2G3rxAb7+7hdT4AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRdAhR0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Qb3eCbP8BWAQ01r0AAAA=[0m[Pipeline] }
+[8mha:////4HOdwnqEn2LAamZdtSjYik1uNe4B1zsR+/hnKQ7Wmt8hAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRokFCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5NudINt/AH4dU5y9AAAA[0m[Pipeline] // stage
+[8mha:////4C7UYAOK3VRc1KeDLnmYrRAdOPHIdOUcNiyk2HbLMg3PAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjJCQKREVrueEFJjbGiXUX7AtJxYv4Gn8gEImKrXZWWs3zBWVOcKDkZeOwDZjrILvY+6nJgVJ7iTTIhs6yJswUndRu0GTdcUZN7GCOKGChYOmwjpQDeoaVaszdVNGgr06cpm2voAj2Bg8QajKzSfyFMcH62ttM+PP8FcDYMYgdQ7HZfo7lG6HAWVPBAAAA[0m[Pipeline] withEnv
+[8mha:////4DocekdQwIPIMtUBCSbKQY6x3fnxnw46EOpVs9UdA+ARAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] {
+[8mha:////4P+Mz9ZfkxqLVTeRe4tcDPzKqJthwbXkdHWsrcWpV+oRAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] stage
+[8mha:////4HYdaBPuuBSuyusNfZE01LI7fttpBycQ3wsYYiMe1cpHAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] { (Test installation)
+[8mha:////4B8ZOYb8Vtc3MEUCGCTx9/htCKambN96Y1T2wgD88EeNAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKpAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHNxXfVKy+AAAA[0m[Pipeline] tool
+[8mha:////4Oq60J3wjknBTjQosdNaeS1bza4wC+p3yze4ild6va2mAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKoQQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN1TuT7W+AAAA[0m[Pipeline] envVarsForTool
+[8mha:////4HzF2BdKvz5IUMZpmj3Rk+zlfl4+K8oP5+6q5R/aMnUWAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUWBhQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCi3+2y7zedZvQG6fT8PwgAAAA==[0m[Pipeline] withEnv
+[8mha:////4Pkd/r2PJLNLr6XjPSsn0brWYkew6VyxZipIIzsknYiXAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUWBFT1ygLJwhNCGmj/8tPSjtxIq7GHWipxIQHy7ZkvdcbishwInaisdh6jLUXXejdlMRA3F4DDaKhi6gJIwUrlB0UGVstVVGysCjLYSVhbbEOFD26BBvZ6Icug0ZXnhNP21FC7s0dnpDJiZw0p28ZGba33kTCH+cvAMYuQX7Yzbafn8UHbGnGmsIAAAA=[0m[Pipeline] {
+[8mha:////4JC+pLYf5Ayfdsd1+5FaKXIHqkexq6vaaCP62zDBzfc+AAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0iIqWisNLzCJMXasO8d2cCpexNf4A4FIVGyx2tlmni9YxwBHDhqtot5QbA16N+p5YebQXx1ntHzBlimyU9io3HCnTgs2nBQsKUpYCdgoah1HQzrBVlh5l5WTpKtzCvN3EFCaboAHFGI2JxnSF6YAu9vYRaaf568AJp+grPefqv0bH7uiub4AAAA=[0m[Pipeline] sh
++ terraform --version
+Terraform v0.13.3
+[8mha:////4NH4Bqrf2JFQZ7dhu/cv4O8xswxgFq1GHlPJxxhuM4V5AAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDudt+ah/eXoq5oL4AAAA=[0m[Pipeline] sh
++ ansible --version
+ansible 2.9.13
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = [u'/home/panda/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 2.7.17 (default, Jul 20 2020, 15:37:01) [GCC 7.5.0]
+[8mha:////4JpkaiWmljsdeclxkmK4vktgXeiaHmMoxasSRyamMVI/AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7BmecueC+AAAA[0m[Pipeline] }
+[8mha:////4Phk19dXlra1u+uqE7EkhVNIzgV7jvm5afgwGa7is47QAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCkKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN1R/4ly+AAAA[0m[Pipeline] // withEnv
+[8mha:////4BE6DfPhqg/KTmvUdK2zZpYEZrUnN5goZ/jPTEFJrDd6AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKKBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw+ayz9vvgAAAA==[0m[Pipeline] }
+[8mha:////4J7ErZSBIBT/wT803pdsoC6c1Z4QsdTbTMHGmew7eW5+AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKKBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w+pKGTTvgAAAA==[0m[Pipeline] // stage
+[8mha:////4JWVHKwJNiI4b9QYQTDaXo34FQPL2UaIufGsO4/6n9kBAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikJCQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKUu0Ou7f4Dxss7u74AAAA=[0m[Pipeline] }
+[8mha:////4BXFp8aMSAIChBlbydkXHP+Ds5AvpMi+J9DMUbj3pzKMAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEA1CqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w/1KGAHvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4J4Mr3KO3rnWNVcaimkfWBqFWgt7TwejkmV5tzNBUFknAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJBoqBAVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5LutINt/ADTbhAa9AAAA[0m[Pipeline] }
+[8mha:////4M5pvxN3Roun0Ncmeu43oBG+1pNZ0w2nQTGXmR0hg4b+AAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRQqJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5LutINt/ABLC40y9AAAA[0m[Pipeline] // withEnv
+[8mha:////4Ozh6x7g0DcISBtB4EyKlM7sZ62UXglNG/TnVxJ9gtZiAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRgA5R0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Q77aCbP8B7tlN5b0AAAA=[0m[Pipeline] }
+[8mha:////4DmvSYfeXir+nEiOhEZaRIvEJ3gTqTkWeh81kp3DQ5HYAAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIUlI6VbYbGE0SIMZDZhWQRKk/k1byDjMxY+av/XvNeb2xTxImjU62lzlOqverD6JanJo7dLfCkWr6qmilxsKqyU8WNPa9YsVisy3JsNHaW6sDJkxPsdWsepgiGXHGRuLijRu6bAU9keimLifKFOeJwH5vE9Ov8DWDue0FeloKs/AD9ZUlGvQAAAA==[0m[Pipeline] // node
+[8mha:////4LEOwMr4iIpV673jswokaz5TGu1/tgO7YjIMU3JAb+W5AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRgA5R0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Q7/aCbPsBe4lug70AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

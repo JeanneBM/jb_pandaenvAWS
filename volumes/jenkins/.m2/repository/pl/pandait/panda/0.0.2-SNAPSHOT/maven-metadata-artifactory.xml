@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>pl.pandait</groupId>
+  <artifactId>panda</artifactId>
+  <version>0.0.2-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20200916.132321</timestamp>
+      <buildNumber>4</buildNumber>
+    </snapshot>
+    <lastUpdated>20200916132321</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.0.2-20200916.132321-4</value>
+        <updated>20200916132321</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.0.2-20200916.132321-4</value>
+        <updated>20200916132321</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

@@ -1,0 +1,9 @@
+Started by user [8mha:////4GU8Wffrn5t1U+rnJ8RRzbVX3fcvkXH2FqCMsJBWwWW3AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9gsS8lEQACjKVYMAAAAA=[0mpanda
+Running as SYSTEM
+Building on master in workspace /var/jenkins_home/workspace/PandaJob1
+[PandaJob1] $ /bin/sh -xe /tmp/jenkins3772964664511296787.sh
++ echo „hello world”
+„hello world”
++ return 1
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

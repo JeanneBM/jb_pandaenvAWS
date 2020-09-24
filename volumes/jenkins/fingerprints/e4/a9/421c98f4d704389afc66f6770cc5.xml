@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2020-09-16 00:37:01.802 UTC</timestamp>
+  <md5sum>e4a9421c98f4d704389afc66f6770cc5</md5sum>
+  <fileName>Credential id=artifactory name=admin/****** (artifactory)</fileName>
+  <usages>
+    <entry>
+      <string>CodePull</string>
+      <ranges>61</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

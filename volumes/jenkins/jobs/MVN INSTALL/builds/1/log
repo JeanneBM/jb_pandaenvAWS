@@ -1,0 +1,21 @@
+Started by user [8mha:////4KAZa2T8wm7stt23rJ1FHk3fd3Aj1c/9xBMUpF//fwRJAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZu/dLi1CL9gsS8lEQA9JRhvsAAAAA=[0mpanda@panda.pl
+Running as SYSTEM
+Building remotely on [8mha:////4IOqeAb+FPehN4roiHhnJXXlEFoW8lT2bpBUAzdcOnv/AAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/eCcxLJUAE32xgfEAAAA[0mSlave (dockerslave) in workspace /home/workspace/MVN INSTALL
+The recommended git tool is: NONE
+using credential artifactory
+Cloning the remote Git repository
+Cloning repository https://github.com/JoannaDemo/panda_application1.git
+ > git init /home/workspace/MVN INSTALL # timeout=10
+Fetching upstream changes from https://github.com/JoannaDemo/panda_application1.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+using GIT_ASKPASS to set credentials artifactory
+ > git fetch --tags --progress -- https://github.com/JoannaDemo/panda_application1.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/JoannaDemo/panda_application1.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+ > git rev-parse origin/master^{commit} # timeout=10
+ERROR: Couldn't find any revision to build. Verify the repository and branch configuration for this job.
+Finished: FAILURE

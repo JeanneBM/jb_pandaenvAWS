@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: domi
+Build-Jdk: 1.8.0_232
+Extension-Name: config-file-provider
+Specification-Title: Ability to provide configuration files (e.g. sett
+ ings.xml for maven, XML, groovy, custom files,...) loaded through the
+  UI which will be copied to the job workspace
+Implementation-Title: config-file-provider
+Implementation-Version: 3.6.3
+Group-Id: org.jenkins-ci.plugins
+Short-Name: config-file-provider
+Long-Name: Config File Provider Plugin
+Url: https://github.com/jenkinsci/config-file-provider-plugin
+Compatible-Since-Version: 2.15
+Plugin-Version: 3.6.3
+Hudson-Version: 2.121.3
+Jenkins-Version: 2.121.3
+Plugin-Dependencies: cloudbees-folder:5.12;resolution:=optional,creden
+ tials:2.1.4,script-security:1.56,ssh-credentials:1.12,structs:1.14,to
+ ken-macro:2.0
+Plugin-Developers: Olivier Lamy:olamy:,Dominik Bartholdi:imod:
+

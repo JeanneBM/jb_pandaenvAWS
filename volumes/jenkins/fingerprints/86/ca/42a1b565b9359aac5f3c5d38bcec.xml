@@ -1,0 +1,37 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2020-09-14 20:15:25.237 UTC</timestamp>
+  <md5sum>86ca42a1b565b9359aac5f3c5d38bcec</md5sum>
+  <fileName>Credential id=350814d5-69cb-4728-94ee-818d5fdd3d96 name=JoannaDemo/****** (Github JoannaDemo)</fileName>
+  <usages>
+    <entry>
+      <string>MVN All</string>
+      <ranges>1-9</ranges>
+    </entry>
+    <entry>
+      <string>panda academy</string>
+      <ranges>23</ranges>
+    </entry>
+    <entry>
+      <string>MVN test -Pselenium</string>
+      <ranges>1-2</ranges>
+    </entry>
+    <entry>
+      <string>CodePull</string>
+      <ranges>52-64</ranges>
+    </entry>
+    <entry>
+      <string>MVN INSTALL TEST -PSELENIUM DEPLOY</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>PipelineFinal</string>
+      <ranges>2-3,10-18</ranges>
+    </entry>
+    <entry>
+      <string>Pipeline1st</string>
+      <ranges>1</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

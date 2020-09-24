@@ -1,0 +1,9 @@
+commit fa0708ac1dafb73c19c6503b4c753299aece7990
+tree f7caa843e074349017eb391650b12ac834c501e4
+parent 27479b9d3dcd36c94ce31514355ccd74a1b1153b
+author JoannaDemo <69588787+JoannaDemo@users.noreply.github.com> 2020-09-14 23:46:50 +0200
+committer GitHub <noreply@github.com> 2020-09-14 23:46:50 +0200
+
+    Update settings.xml
+
+:100644 100644 bca75f92a316defe173ec93b1dd16f11ece7c8d1 1aef94229fd2d13cc37a66ebbdee1b101e8d4469 M	.mvn/settings.xml

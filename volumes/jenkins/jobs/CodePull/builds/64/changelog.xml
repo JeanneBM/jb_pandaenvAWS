@@ -1,0 +1,63 @@
+commit 6eb8d334e17ab8f517b5e46bc430c3b1e456839e
+tree 0ab43d3993b399dfc235de05b9c9995733320bc3
+parent 1b1ebfd5b77ce84e9d9cd8193675db5b413c49dc
+author JoannaDemo <69588787+JoannaDemo@users.noreply.github.com> 2020-09-16 16:09:58 +0200
+committer GitHub <noreply@github.com> 2020-09-16 16:09:58 +0200
+
+    Update application.properties
+
+:100644 100644 8f91ca7bf885e450aa27138933ce5cf1f0539d70 f620381b549eeb0c0e3db230b6b144edb4deef06 M	src/main/resources/application.properties
+commit 1b1ebfd5b77ce84e9d9cd8193675db5b413c49dc
+tree a087eddfc9f1c896a48543fc4ce39f092243d0a4
+parent 75b66bc6796625fe8977b1ba3b0b57c62c02d01d
+author JoannaDemo <69588787+JoannaDemo@users.noreply.github.com> 2020-09-16 16:08:42 +0200
+committer GitHub <noreply@github.com> 2020-09-16 16:08:42 +0200
+
+    Update application.properties
+
+:100644 100644 8b137891791fe96927ad78e64b0aad7bded08bdc 8f91ca7bf885e450aa27138933ce5cf1f0539d70 M	src/main/resources/application.properties
+commit 75b66bc6796625fe8977b1ba3b0b57c62c02d01d
+tree b8109b7e117da112ee32b3cf16dabc5a49cb4c49
+parent 848be84a8d2c06b3a54a1444d70976e39350dec9
+author JoannaDemo <69588787+JoannaDemo@users.noreply.github.com> 2020-09-16 16:05:36 +0200
+committer GitHub <noreply@github.com> 2020-09-16 16:05:36 +0200
+
+    Update application.properties
+
+:100644 100644 4d360de145ec4672c398bbd6f992199a4f5efca4 8b137891791fe96927ad78e64b0aad7bded08bdc M	src/main/resources/application.properties
+commit 848be84a8d2c06b3a54a1444d70976e39350dec9
+tree 0b7d8c23c2e09e50f5efaf194bd6cc3c66653513
+parent 11917a29518e21915cba745092e6a6601e83d147
+author JoannaDemo <69588787+JoannaDemo@users.noreply.github.com> 2020-09-16 16:03:56 +0200
+committer GitHub <noreply@github.com> 2020-09-16 16:03:56 +0200
+
+    Update application.properties
+
+:100644 100644 cd2d02be7ced2024503d041cc8d424ec82e41a82 4d360de145ec4672c398bbd6f992199a4f5efca4 M	src/main/resources/application.properties
+commit 11917a29518e21915cba745092e6a6601e83d147
+tree 0cf7aad781c0b7e44a7f21cccbd10a22ef657aa8
+parent 0bc9c4783cab527b856f2c3cf4fc727f06d347c4
+author JoannaDemo <69588787+JoannaDemo@users.noreply.github.com> 2020-09-16 16:01:57 +0200
+committer GitHub <noreply@github.com> 2020-09-16 16:01:57 +0200
+
+    Update application.properties
+
+:100644 100644 f620381b549eeb0c0e3db230b6b144edb4deef06 cd2d02be7ced2024503d041cc8d424ec82e41a82 M	src/main/resources/application.properties
+commit 0bc9c4783cab527b856f2c3cf4fc727f06d347c4
+tree 0ab43d3993b399dfc235de05b9c9995733320bc3
+parent 0ba8cd4081e51b648c480afb72248f4690823661
+author JoannaDemo <69588787+JoannaDemo@users.noreply.github.com> 2020-09-16 14:48:42 +0200
+committer GitHub <noreply@github.com> 2020-09-16 14:48:42 +0200
+
+    Update pom.xml
+
+:100644 100644 fe94417d2e9a5ebda603fb3969ca21a2894410a9 1c48167b7de589ab6b17e78499d08f8f504b7cd1 M	pom.xml
+commit 0ba8cd4081e51b648c480afb72248f4690823661
+tree 18f3bc463ffa54899127c89072cbf0e8a5490189
+parent 8afdde347d6ea570ad7c7b16b50a4be438afb3bb
+author JoannaDemo <69588787+JoannaDemo@users.noreply.github.com> 2020-09-16 14:43:28 +0200
+committer GitHub <noreply@github.com> 2020-09-16 14:43:28 +0200
+
+    Update pom.xml
+
+:100644 100644 8be8d3fa9f8fb27bf48101aa93570d9788197076 fe94417d2e9a5ebda603fb3969ca21a2894410a9 M	pom.xml

@@ -1,0 +1,9 @@
+commit a2a95d7d6e2dab8a481c73ee690fdf5ab4cc180c
+tree a326af6cc89fcca6a46b06f6ad4dc85d1268050e
+parent 7bb63cece592b1babb61a1ca13aada10c1ed596b
+author JeanneBM <55690923+JeanneBM@users.noreply.github.com> 2020-09-24 01:27:50 +0200
+committer GitHub <noreply@github.com> 2020-09-24 01:27:50 +0200
+
+    Update pom.xml
+
+:100644 100644 2c2e11d6cdfaa64ae815d805895ab5927afdf39b adcc8c0c402c14fdb73b07ae233af4febb1245a8 M	pom.xml

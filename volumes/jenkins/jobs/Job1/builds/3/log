@@ -1,0 +1,9 @@
+Started by user [8mha:////4GsXJK8MEMfZGxNoWLosGgOTP9o9kcD5RHuwrpS7FIQ1AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Job1
+[Job1] $ /bin/sh -xe /tmp/jenkins5772941276856189621.sh
+/tmp/jenkins5772941276856189621.sh: 2: /tmp/jenkins5772941276856189621.sh: cannot open echo: No such file
++ World
+/tmp/jenkins5772941276856189621.sh: 2: /tmp/jenkins5772941276856189621.sh: World: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

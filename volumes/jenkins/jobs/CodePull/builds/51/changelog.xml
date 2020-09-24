@@ -1,0 +1,18 @@
+commit 27479b9d3dcd36c94ce31514355ccd74a1b1153b
+tree 5a265eb4c65f642b444971ace6d312c2ad8034bf
+parent eb0842f22871e5d8f368c1df654ad191dd68e05c
+author JoannaDemo <69588787+JoannaDemo@users.noreply.github.com> 2020-09-14 21:34:36 +0200
+committer GitHub <noreply@github.com> 2020-09-14 21:34:36 +0200
+
+    Update settings.xml
+
+:100644 100644 8b137891791fe96927ad78e64b0aad7bded08bdc bca75f92a316defe173ec93b1dd16f11ece7c8d1 M	.mvn/settings.xml
+commit eb0842f22871e5d8f368c1df654ad191dd68e05c
+tree bf82e6507da6de92c4a358cd71d652ae6045ff69
+parent 8afdde347d6ea570ad7c7b16b50a4be438afb3bb
+author JoannaDemo <69588787+JoannaDemo@users.noreply.github.com> 2020-09-14 21:34:19 +0200
+committer GitHub <noreply@github.com> 2020-09-14 21:34:19 +0200
+
+    Create settings.xml
+
+:000000 100644 0000000000000000000000000000000000000000 8b137891791fe96927ad78e64b0aad7bded08bdc A	.mvn/settings.xml

@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: domi
+Build-Jdk: 1.8.0_121
+Extension-Name: managed-scripts
+Specification-Title: Managed scripts are shell script which are manage
+ d centrally by an administrator and can be referenced as a build step
+  within jobs.
+Implementation-Title: managed-scripts
+Implementation-Version: 1.4
+Group-Id: org.jenkinsci.plugins
+Short-Name: managed-scripts
+Long-Name: Managed Scripts
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Managed+Script+Plugin
+Plugin-Version: 1.4
+Hudson-Version: 1.642.3
+Jenkins-Version: 1.642.3
+Plugin-Dependencies: token-macro:1.12.1,config-file-provider:2.16.3
+Plugin-Developers: Dominik Bartholdi:imod:
+

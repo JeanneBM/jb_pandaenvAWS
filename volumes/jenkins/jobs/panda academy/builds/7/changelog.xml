@@ -1,0 +1,10 @@
+commit 23173cc616d4a99f4a37c225e9278feb734b49b3
+tree 4bbac06dfa976089d91312e3ac07ac03806f4c41
+parent f47fa7d3570400b6bb5738154d00d9ea40af53cb
+author WitoldSlawko <witold.slawko@gmail.com> 2020-09-07 17:49:00 +0000
+committer WitoldSlawko <witold.slawko@gmail.com> 2020-09-07 17:49:00 +0000
+
+     changed ip to ubuntu container name
+
+
+:100644 100644 7456a5fd5820c5d6546ef9477e0f20668349759f d061127dec98dec8a09839d13f69a9c89fb6e9a5 M	src/test/java/pl/pandait/panda/PandaApplicationSeleniumTest.java
